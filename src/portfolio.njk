@@ -1,0 +1,147 @@
+---
+layout: base.njk
+title: "Portfolio"
+bodyClass: portfolio-view
+description: "Jerónimo Gutiérrez Balanta — Full Portfolio View"
+---
+
+{# ── Extra CSS for this page only ────────────────────────── #}
+<link rel="stylesheet" href="/assets/css/portfolio.css" />
+
+{# ── Project data as JSON for JS hydration ──────────────── #}
+<script type="application/json" id="pv-project-data">
+[{% for project in collections.projects | reverse %}
+  {
+    "slug": {{ project.fileSlug | dump | safe }},
+    "url": {{ project.url | dump | safe }},
+    "title": {{ project.data.title | dump | safe }},
+    "year": {{ project.data.year | dump | safe }},
+    "type": {{ project.data.type | dump | safe }},
+    "category": {{ project.data.category | dump | safe }},
+    "description": {{ project.data.description | dump | safe }},
+    "content": {{ project.templateContent | dump | safe }},
+    "images": {% if project.data.images %}{{ project.data.images | dump | safe }}{% else %}[]{% endif %}
+  }{% if not loop.last %},{% endif %}
+{% endfor %}]
+</script>
+
+{# ── Render diary entries first so we can JSON-encode the HTML ── #}
+{% set diaryHtml %}{% for entry in collections.diary | reverse %}<div class="pv-diary-entry-mid"><a
+    href="{{ entry.url }}">{{ entry.data.title or "Untitled" }}</a><span>{{ entry.date | date }}</span></div>{% else %}
+<p>No diary entries yet.</p>{% endfor %}{% endset %}
+
+{# ── Static page data (CV / Diary / About) for middle panel #}
+<script type="application/json" id="pv-page-data">
+{
+  "cv": {
+    "title": "Curriculum Vitae",
+    "content": "<h2>Education</h2><ul><li><em>2024\u20132026 (ongoing)</em> \u2014 <strong>Master Digital Media</strong>, Hochschule f\u00FCr K\u00FCnste Bremen</li><li><em>2016\u20132022</em> \u2014 <strong>Bachelor of Visual Arts</strong>, Universidad del Valle, Cali \u2014 Meritorious Thesis \u00B7 4.5 avg.</li><li><em>2014\u20132016</em> \u2014 <strong>Technical Certificate</strong>, SENA / Comfandi: Consumer audio &amp; video electronics</li></ul><h2>Scholarships &amp; Certificates</h2><ul><li><em>2024\u20132026</em> \u2014 <strong>DAAD Full Master Scholarship</strong> \u00B7 Fine Art, Design, Visual Communication &amp; Film</li><li><em>2023</em> \u2014 <strong>Google UX Design Specialization</strong>, Coursera</li></ul><h2>Work experience</h2><ul><li><em>May 2023\u2013present (remote)</em> \u2014 <strong>Resolution Specialist</strong>, Amazon</li><li><em>2021\u20132023</em> \u2014 <strong>Graphic Designer &amp; Artist</strong>, Capricci Club Co.</li><li><em>Sep\u2013Dec 2022</em> \u2014 <strong>Visual Thinking &amp; Illustrator</strong>, Universidad Icesi / OEM</li><li><em>Jun\u2013Jul 2022</em> \u2014 <strong>Visual Thinking</strong>, CVC / Universidad del Valle</li><li><em>May 2020\u2013Sep 2021</em> \u2014 <strong>Graphic Designer</strong>, Universidad Javeriana Cali</li><li><em>2019</em> \u2014 <strong>Graphic Designer</strong>, Universidad del Valle \u2014 Disability &amp; Inclusion</li></ul><h2>Languages</h2><ul><li><strong>Spanish</strong> Native \u00B7 <strong>English</strong> IELTS 7.5 \u00B7 <strong>German</strong> B1.2</li></ul><h2>Skills</h2><ul><li>Adobe Suite \u00B7 Figma (Advanced) \u00B7 Visual Thinking \u00B7 Three.js \u00B7 UX Research \u00B7 UI Design \u00B7 AI Prompting</li></ul>"
+  },
+  "diary": {
+    "title": "Diary",
+    "content": {{ diaryHtml | dump | safe }}
+  },
+  "about": {
+    "title": "About",
+    "content": "<p>Jer\u00F3nimo Guti\u00E9rrez Balanta is an artist-researcher and designer based in Bremen (DE), originally from Cali, Colombia. Holder of a DAAD full scholarship for his Master\u2019s in Digital Media at Hochschule f\u00FCr K\u00FCnste Bremen (2024\u20132026).</p><p>His practice moves through labor and interfaces, political violence, illustration, comics, speculative design and commercial work. He was formerly a resolution specialist at Amazon and has worked with NGOs, universities and independent brands in Colombia.</p><p><a href='/about/'>Full bio \u2192</a></p>"
+  }
+}
+</script>
+
+{# ── THREE-PANE SHELL ─────────────────────────────────────── #}
+<div class="pv-shell">
+
+  {# ════════ LEFT PANEL ════════ #}
+  <aside class="pv-left" id="pv-left" aria-label="Portfolio navigation">
+
+    {# Intro block — sticky ─ #}
+    <div class="pv-intro" id="pv-intro">
+
+      {# Name — mixed case, no caps #}
+      <h1 class="pv-name" id="pv-name">Jerónimo Gutiérrez Balanta</h1>
+
+      {# Location #}
+      <p class="pv-location">Cali (CO) ↔ Bremen (DE)</p>
+
+    </div>{# /pv-intro #}
+
+    {# Sections area — scrolls beneath intro #}
+    <div class="pv-sections">
+
+      {# ── WORKS (collapsible dropdown) ── #}
+      <section class="pv-section" id="pv-sec-works">
+        <h2 class="pv-section-heading pv-dropdown-toggle is-open" id="pv-works-toggle" role="button" tabindex="0"
+          aria-expanded="true" aria-controls="pv-works-list">
+          works <span class="pv-arrow">↓</span>
+        </h2>
+        <ul class="pv-project-list" id="pv-works-list">
+          {% for project in collections.projects | reverse %}
+          <li class="pv-project-item" data-slug="{{ project.fileSlug }}" role="button" tabindex="0"
+            aria-label="Preview {{ project.data.title }}">
+            <span class="pv-project-year">{{ project.data.year }}</span>
+            <span class="pv-project-title">{{ project.data.title }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      {# ── CV ── #}
+      <section class="pv-section" id="pv-sec-cv">
+        <h2 class="pv-section-heading pv-page-item" data-page="cv" role="button" tabindex="0">cv</h2>
+      </section>
+
+      {# ── DIARY ── #}
+      <section class="pv-section" id="pv-sec-diary">
+        <h2 class="pv-section-heading pv-page-item" data-page="diary" role="button" tabindex="0">diary</h2>
+      </section>
+
+      {# ── ABOUT ── #}
+      <section class="pv-section" id="pv-sec-about">
+        <h2 class="pv-section-heading pv-page-item" data-page="about" role="button" tabindex="0">about</h2>
+      </section>
+
+    </div>{# /pv-sections #}
+
+  </aside>
+
+  {# ════════ MIDDLE PANEL ════════ #}
+  <main class="pv-middle" id="pv-middle">
+
+    {# Default state — portrait/idle #}
+    <div class="pv-middle-default" id="pv-default">
+      {# Portrait #}
+      <img src="/assets/images/jero.webp" alt="Jerónimo Gutiérrez Balanta" class="pv-portrait" />
+      <p class="pv-portrait-caption">Hover a work to preview</p>
+    </div>
+
+    {# Project / page preview state #}
+    <div class="pv-middle-project" id="pv-project-view">
+      <p class="pv-proj-year-type" id="pv-proj-year-type"></p>
+      <h2 class="pv-proj-title" id="pv-proj-title"></h2>
+      <p class="pv-proj-description" id="pv-proj-description"></p>
+      <div class="pv-proj-body" id="pv-proj-body"></div>
+      <div class="pv-proj-images" id="pv-proj-images"></div>
+      <a class="pv-proj-link" id="pv-proj-link" href="#" style="display:none;">Open full page →</a>
+    </div>
+
+  </main>
+
+  {# ════════ RIGHT PANEL ════════ #}
+  <aside class="pv-right" id="pv-right" aria-label="Image zoom view">
+
+    {# Default placeholder icon (white bg, purple square outline) #}
+    <div class="pv-right-default" id="pv-right-default">
+      <div class="pv-right-default-icon"></div>
+    </div>
+
+    {# Zoom image — populated by JS on image hover #}
+    <div class="pv-zoom-image" id="pv-zoom-image">
+      <img src="" alt="" id="pv-zoom-img" />
+    </div>
+
+  </aside>
+
+</div>
+
+{# ── Portfolio-specific script ────────────────────────────── #}
+<script src="/assets/js/portfolio.js" defer></script>

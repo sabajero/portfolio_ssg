@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: "Projects"
+bodyClass: projects-page projects-index
+description: "Browse all projects."
+permalink: /projects/
+---
+
+
+<section class="projects-list" aria-label="All projects">
+  <ul class="diary-list">
+    {% for project in collections.projects | reverse %}
+    <li class="diary-list__item project-list-item" data-category="{{ project.data.category | lower }}">
+      <div class="diary-list__meta">
+        {{ project.data.year }}
+      </div>
+      <h2 class="diary-list__title">
+        <a href="{{ project.url }}">{{ project.data.title }}</a>
+      </h2>
+      {% if project.data.category %}
+      <span class="project__category-tag">{{ project.data.category | upper }}</span>
+      {% endif %}
+    </li>
+    {% else %}
+    <li class="projects-empty">No projects yet. Add <code>.md</code> files to <code>src/_projects/</code>.</li>
+    {% endfor %}
+  </ul>
+</section>

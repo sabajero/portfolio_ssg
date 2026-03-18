@@ -1,0 +1,60 @@
+---
+layout: base.njk
+title: false
+bodyClass: home
+description: "Artist portfolio — Jerónimo Gutiérrez Balanta"
+---
+
+<!-- Animation canvas — receives JS canvas/WebGL scene -->
+<div id="canvas-container" aria-hidden="true">
+  <canvas id="portfolio-canvas"></canvas>
+</div>
+
+<div class="home-ui">
+
+  <!-- / NAME -->
+  <h1 class="home-ui__name" style="color: rgba(138, 125, 111, 0.821);">{{ site.title }}</h1>
+
+  <!-- // NAV: primary left, secondary right -->
+  <nav class="home-ui__nav" aria-label="Main navigation">
+    <div class="home-ui__nav-group">
+      <a href="/cv/">CV</a>
+      <div class="home-ui__dropdown">
+        <a href="/projects/" class="home-ui__dropdown-toggle" id="projects-toggle" aria-expanded="false"
+          aria-controls="projects-menu">
+          PROJECTS
+        </a>
+        <ul class="home-ui__dropdown-menu" id="projects-menu">
+          {% for project in collections.projects | reverse %}
+          <li>
+            <a href="{{ project.url }}">{{ project.data.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <a href="/about/">ABOUT</a>
+    </div>
+    <div class="home-ui__nav-group home-ui__nav-group--secondary">
+      <a href="{{ site.instagram }}" target="_blank" rel="noopener">IG</a>
+      <a href="/diary/">diary</a>
+      <a href="/contact/">CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- /// LOCATION -->
+  <p class="home-ui__location">Cali (CO) ↔ Bremen (DE)</p>
+
+  <!-- //// BIO — left half only -->
+  <p class="home-ui__bio">
+    I'm an artist-researcher and designer that love to create stories, characters, worlds.
+    I work around labor and interfaces, comic, political violence and of course usually commercial stuff.
+    I like climbing and running. Lately I develop websites and learn about coffee.
+  </p>
+
+  <!-- //// FOOTER — static bottom bar -->
+  <footer class="home-ui__footer">
+    <button class="home-ui__footer-btn" id="btn-ai-mode"></button>
+    <button class="home-ui__footer-btn" id="btn-zen"></button>
+  </footer>
+
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default('en') }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ description | default(site.description) }}" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="{% if title %}{{ title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{{ description | default(site.description) }}" />
+  <meta property="og:type"        content="website" />
+  {% if cover_image %}<meta property="og:image" content="{{ site.url }}{{ cover_image }}" />{% endif %}
+
+  <!-- Inter — Google Fonts (300, 400, 500) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body class="{{ bodyClass | default('') }}">
+
+  {% include "nav.njk" %}
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

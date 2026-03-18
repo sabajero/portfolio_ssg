@@ -1,0 +1,20 @@
+---
+layout: page.njk
+title: "Diary"
+bodyClass: diary-index
+---
+
+<ul class="diary-list">
+    {% for entry in collections.diary | reverse %}
+    <li class="diary-list__item">
+        <div class="diary-list__meta">
+            <time datetime="{{ entry.date | date }}">{{ entry.date | date }}</time>
+        </div>
+        <h2 class="diary-list__title">
+            <a href="{{ entry.url }}">{{ entry.data.title or "Untitled" }}</a>
+        </h2>
+    </li>
+    {% else %}
+    <li class="projects-empty">No entries found yet.</li>
+    {% endfor %}
+</ul>

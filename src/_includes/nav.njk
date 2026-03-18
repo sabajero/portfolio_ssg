@@ -1,0 +1,17 @@
+<nav class="site-nav" aria-label="Main navigation">
+  <!-- Left: Go Back Arrow -->
+  <a href="/" class="nav__back" aria-label="Back to Home">&lt;</a>
+
+  <!-- Right: Current Section Indicator -->
+  <div class="nav__current-section">
+    {% if '/cv/' in page.url %}
+    <span class="nav__current">CV</span>
+    {% elif '/about/' in page.url %}
+    <span class="nav__current">ABOUT</span>
+    {% elif '/diary/' in page.url %}
+    <a href="/diary/" class="nav__current nav__current--diary">diary</a>
+    {% elif '/projects/' in page.url or layout == 'project.njk' %}
+    <a href="/projects/" class="nav__current">PROJECTS</a>
+    {% endif %}
+  </div>
+</nav>

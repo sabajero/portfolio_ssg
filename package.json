@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-ssg",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "High-performance minimalist artist portfolio — Digital Sovereignty",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "js-yaml": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

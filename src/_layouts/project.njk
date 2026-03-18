@@ -1,0 +1,70 @@
+---
+layout: base.njk
+bodyClass: project-page
+---
+
+<article class="project">
+  <!-- Minimalistic one-line meta bar: [Year · Type · Category] ——————— [← Prev  Next →] -->
+  <header class="project__meta-bar">
+    <div class="project__meta-bar__left">
+      <span class="project__year">{{ year }}</span>
+      {% if type %}<span class="project__meta-sep"> · </span><span class="project__type">{{ type }}</span>{% endif %}
+      {% if category %}<span class="project__meta-sep"> · </span><span class="project__category-inline">{{ category
+        }}</span>{% endif %}
+    </div>
+    <div class="project__meta-bar__right">
+      {% set previousProject = collections.projects | getPreviousCollectionItem(page) %}
+      {% set nextProject = collections.projects | getNextCollectionItem(page) %}
+      {% if previousProject %}
+      <a href="{{ previousProject.url }}" class="project__nav-link">&larr; Prev</a>
+      {% endif %}
+      {% if nextProject %}
+      <a href="{{ nextProject.url }}" class="project__nav-link">Next &rarr;</a>
+      {% endif %}
+    </div>
+  </header>
+
+  <!-- Cover image -->
+  {% if cover_image %}
+  <div class="project__cover">
+    <img src="{{ cover_image }}" alt="{{ title }}" loading="eager" />
+  </div>
+  {% endif %}
+
+  <!-- Body (Markdown content) — the ## Title heading inside acts as the page title -->
+  <div class="project__body">
+    {{ content | safe }}
+  </div>
+
+  <!-- Image gallery -->
+  {% if images and images.length > 0 %}
+  <div class="project__gallery">
+    {% for img in images %}
+    <figure class="project__gallery-item">
+      <img src="{{ img }}" alt="{{ title }} — image {{ loop.index }}" loading="lazy" />
+    </figure>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <!-- Awards -->
+  {% if awards and awards.length > 0 %}
+  <aside class="project__awards">
+    <h2 class="project__awards-title">Awards</h2>
+    <ul>
+      {% for award in awards %}
+      <li>{{ award.name }}{% if award.category %} — {{ award.category }}{% endif %} ({{ award.year }})</li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
+
+  <!-- Edition / print info -->
+  {% if edition %}
+  <p class="project__edition">Edition: {{ edition }}</p>
+  {% endif %}
+
+  <footer class="project__footer">
+    <a href="/projects/">&larr; All Projects</a>
+  </footer>
+</article>
