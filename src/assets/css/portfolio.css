@@ -302,10 +302,11 @@ body.portfolio-view .site-nav {
 }
 
 .pv-portrait {
-  width: 220px;
-  height: 275px;
-  object-fit: cover;
-  object-position: center top;
+  max-width: 100%;
+  max-height: 65vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   opacity: 1;
 }
 
@@ -313,7 +314,7 @@ body.portfolio-view .site-nav {
 .pv-portrait-placeholder {
   width: 220px;
   height: 275px;
-  background: #f0eeed;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
