@@ -124,7 +124,7 @@ body.portfolio-view .site-nav {
 }
 
 .pv-name:hover {
-  color: #01ff6f;
+  color: #f9731fff;
 }
 
 /* BIO */
@@ -171,6 +171,15 @@ body.portfolio-view .site-nav {
 
 .pv-section-heading.pv-page-item:hover,
 .pv-section-heading.pv-page-item.is-active {
+  color: var(--pv-accent);
+}
+
+.pv-section-heading.pv-page-item.is-subdued {
+  color: var(--pv-muted);
+}
+
+.pv-section-heading.pv-page-item.is-subdued:hover,
+.pv-section-heading.pv-page-item.is-subdued.is-active {
   color: var(--pv-accent);
 }
 
@@ -337,7 +346,7 @@ body.portfolio-view .site-nav {
 /* ── Project / Page preview state ────────────────────────── */
 .pv-middle-project {
   display: none;
-  padding: 3.5rem 2.5rem 4rem;
+  padding: 0 2.5rem 4rem;
   animation: fadeUp 260ms ease both;
 }
 
@@ -362,6 +371,11 @@ body.portfolio-view .site-nav {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.pv-proj-categories:empty {
+  display: none;
+  margin: 0;
 }
 
 /* Categories Animated Pill */
@@ -401,6 +415,7 @@ body.portfolio-view .site-nav {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding-right: 14px;
+  margin-left: -10px; /* Pull text tighter to the initial letter */
   opacity: 0;
   transform: translateX(-5px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -419,6 +434,7 @@ body.portfolio-view .site-nav {
   font-weight: 230;
   letter-spacing: -0.02em;
   line-height: 1.0;
+  margin-top: 0;
   margin-bottom: 1rem;
   color: var(--pv-text);
 }
