@@ -2,16 +2,10 @@
 layout: project.njk
 title: "Aura Coffee Company"
 year: 2025
+category: "Artistic Research"
+type: "Audio Essay"
 status: published
 description: "Reflecting through sound theories about family narratives, labor and inequality. An exploration of the life of my great aunt Aura, who worked in the Merino coffee factory in the 60s."
-categories:
-  - "Art-Research, audio"
-  - "Audio Essay"
-  - "Design"
-  - "Art"
-  - "Freelance"
-  - "Personal"
-  - "Research"
 ---
 
 
