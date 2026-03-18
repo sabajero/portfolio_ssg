@@ -4,13 +4,17 @@ bodyClass: project-page
 ---
 
 <article class="project">
-  <!-- Minimalistic one-line meta bar: [Year · Type · Category] ——————— [← Prev  Next →] -->
-  <header class="project__meta-bar">
-    <div class="project__meta-bar__left">
-      <span class="project__year">{{ year }}</span>
-      {% if type %}<span class="project__meta-sep"> · </span><span class="project__type">{{ type }}</span>{% endif %}
-      {% if category %}<span class="project__meta-sep"> · </span><span class="project__category-inline">{{ category
-        }}</span>{% endif %}
+  <!-- Body (Markdown content) — the single title and metadata -->
+  <h1 class="project__title" style="margin-bottom: 0.5rem;">{{ title }}</h1>
+  
+  <header class="project__meta-bar" style="margin-top: 0; margin-bottom: 2rem;">
+    <div class="project__meta-bar__left pv-proj-categories">
+      {% for cat in categories | limit(5) %}
+      <span class="cat-pill" style="--cat-bg: {{ cat | hashColor }}">
+        <span class="cat-pill-icon">{{ cat | firstLetter }}</span>
+        <span class="cat-pill-text">{{ cat | restOfWord }}</span>
+      </span>
+      {% endfor %}
     </div>
     <div class="project__meta-bar__right">
       {% set previousProject = collections.projects | getPreviousCollectionItem(page) %}

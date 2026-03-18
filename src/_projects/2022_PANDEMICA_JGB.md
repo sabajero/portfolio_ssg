@@ -2,16 +2,18 @@
 layout: project.njk
 title: "PANDEMICA"
 year: 2022
-category: "Art-Research"
-type: "B.A. Thesis"
 status: published
 featured: true
 description: "Meritorious Degree Work at Universidad del Valle reflecting on the Covid-19 pandemic through research-creation methodology and a virtual art book."
+categories:
+  - "Art-Research"
+  - "B.A. Thesis"
+  - "Design"
+  - "Art"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
-
-## Pandémica
-**2022 · Art-Research · B.A. Thesis degree**
-
 This thesis reflects on the impact of the Covid-19 pandemic on the daily lives of Cali and Buga residents through research-creation methodology (Silva-Cañaveral, S.J. 2016), particularly from a familial self-referential perspective. It underscores the importance of investigating this topic in visual arts due to its traumatic nature and the lack of academic production in this area at the time. Pandemics, historically recurring phenomena, shape societies and profoundly affect people's daily routines. Art plays a crucial role in understanding the psychological and personal effects of living through a pandemic. Through images and metaphors, art constructs meanings and imaginaries about the surrounding phenomena that preserve over time and creative narratives about illness. This thesis combines qualitative research with artistic creation, focusing on drawing and painting as a means of expression. The thesis comprises chapters dedicated to the artistic representation of major pandemics, historical and conceptual approaches to book art and digital book art, and my own artistic practices both from personal and from the others perspectives about the Covid-19 pandemic's effects.
 
 ---

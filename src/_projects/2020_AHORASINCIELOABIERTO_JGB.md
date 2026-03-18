@@ -2,8 +2,6 @@
 layout: project.njk
 title: "Ahora sin cielo abierto"
 year: 2020
-category: "Art"
-type: "Watercolor · Regional Grant Project"
 status: published
 featured: true
 description: "Ten watercolor paintings capturing the emotions and experiences of young university students during the Covid-19 lockdown in Cali. Winning project of the 'Unidos Por la Vida' call supported by the Cali Secretariat of Culture."
@@ -12,11 +10,15 @@ links:
     url: "https://ahorasincieloabierto.tumblr.com/"
   - label: "Call details"
     url: "https://www.cali.gov.co/cultura/publicaciones/153424/areas-convocatoria-unidos-por-la-vida-2020/"
+categories:
+  - "Art"
+  - "Watercolor"
+  - "Regional Grant Project"
+  - "Design"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
-
-## Ahora sin cielo abierto
-**2020 · Watercolor · Regional Grant Project**
-
 "Now, Without an Open Sky" is an artistic research project aimed at capturing the emotions, thoughts, and experiences of 10 young university students during the confinement brought about by the Covid-19 pandemic in Cali. Each illustration was born from dialogue with the participants, focusing on what they deemed significant to be depicted. The culmination of this project are ten watercolor paintings, each offering insights into the city and the confinement experience from an intimate perspective. This project is hosted within the virtual exhibition at ahorasincieloabierto.tumblr.com.
 
 At the end, the watercolors were also a cartography of the city of Cali, since each image was accompanied by a short story or comment extracted from the focus groups with the participants.

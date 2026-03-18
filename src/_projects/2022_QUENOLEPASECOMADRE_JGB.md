@@ -2,15 +2,16 @@
 layout: project.njk
 title: "¡Qué no le pase comadre!"
 year: 2022
-category: "Design"
-type: "Comic book"
 status: published
 description: "Short comic designed and illustrated as part of a health research project characterizing the health status of women in Buenaventura and Guapi."
+categories:
+  - "Design"
+  - "Comic book"
+  - "Art"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
-
-## ¡Qué no le pase comadre!
-**2022 · Comic book**
-
 "Don't let it happen to you my friend" is a short comic part of the results of the research project "Characterization of the health state of affairs of Women in Buenaventura and Guapi" (Caracterización de la situación de Salud de las mujeres de Buenaventura y Guapi). With the support of the Ministry of Science and Technology and Executed by the "Observatorio para la Equidad de las Mujeres (OEM) between 2021 and 2022.
 
 I was invited to conceptualize, design and illustrate this comic working hand to hand with the main researchers and women from the community, the comic tells the story of a vulnerable black woman in Buenaventura who is soon to give birth but is treated violently by the hospital just because the established stereotypes about black people, this of course based on experiences from the women. The comic was used as part of the socialization strategy to fight obstetric violence in Buenaventura and other towns in 2022.

@@ -48,7 +48,33 @@ export default function (eleventyConfig) {
     return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}-${String(d.getUTCDate()).padStart(2, '0')}`;
   });
 
-  eleventyConfig.addFilter("limit", (arr, n) => arr.slice(0, n));
+  eleventyConfig.addFilter("limit", (arr, n) => arr ? arr.slice(0, n) : []);
+
+  // ── Category Pill Helpers
+  eleventyConfig.addFilter("firstLetter", (str) => str ? String(str).charAt(0) : "");
+  eleventyConfig.addFilter("restOfWord", (str) => str ? String(str).slice(1) : "");
+  eleventyConfig.addFilter("hashColor", (str) => {
+    if (!str) return "#888";
+
+    // ✅ Define your custom HEX colors per category here:
+    const customColors = {
+      "Graphic Design": "#0062ffff",
+      "Art": "#333333",
+      "Freelance": "#4D4D4D",
+      "Personal": "#666666",
+      "Research": "#808080"
+    };
+
+    if (customColors[str]) {
+      return customColors[str];
+    }
+
+    // Default dynamic gray for unexpected categories
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) hash += str.charCodeAt(i);
+    const val = 80 + (hash % 100);
+    return `rgb(${val}, ${val}, ${val})`;
+  });
 
   // ── Global data directory (YAML files)
   // Eleventy reads _data/ automatically when in the input dir

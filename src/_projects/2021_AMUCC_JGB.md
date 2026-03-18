@@ -2,8 +2,6 @@
 layout: project.njk
 title: "Didactic Graphic Material – AMUCC"
 year: 2021
-category: "Design"
-type: "Graphic Design · Freelance · University"
 status: published
 description: "Graphic and didactic workbook illustrations for a project on indicators of gender inequality for AMUCC coffee-growing women in Cauca, in partnership with Universidad Javeriana Cali, WWB Colombia Foundation, and Tecnicafé."
 links:
@@ -11,11 +9,15 @@ links:
     url: "https://www.tandfonline.com/doi/full/10.1080/23311886.2023.2204633"
   - label: "Press"
     url: "https://www.javeriana.edu.co/pesquisa/empoderamiento-mujeres-caficultoras-cauca/"
+categories:
+  - "Design"
+  - "Graphic Design"
+  - "Freelance"
+  - "University"
+  - "Art"
+  - "Personal"
+  - "Research"
 ---
-
-## Didactic Graphic Material – AMUCC
-**2021 · Graphic Design · Freelance**
-
 Graphic material for the socialization of project results: **"Factors that influence the empowerment of women coffee growers in Cauca associated with AMUCC"** — Graphic design for Universidad Javeriana on a project with AMUCC, Fundación WWB Colombia, Tecnicafé.
 
 This work corresponds to the graphic and didactic material of the project "Factors that influence the empowerment of women coffee growers in Cauca associated with AMUCC, Javeriana Cali University, WWB Colombia Foundation, Tecnicafé, AMUCC. This material was printed and used as a support booklet of around 20 pages for a workshop with AMUCC women in the department of Cauca, Colombia. Each page and its illustrations are intended to facilitate AMUCC women's understanding of the project's empowerment or disempowerment indicators.

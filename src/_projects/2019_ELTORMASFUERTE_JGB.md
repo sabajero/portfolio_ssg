@@ -2,15 +2,13 @@
 layout: project.njk
 title: "El toro más fuerte"
 year: 2019
-category: "Art"
-type: "Animation · Academic Project"
 status: published
 description: "An animation project drawing from personal experience of familial disappearance to explore collective narratives of disappearance phenomena in Colombia in the 1980s."
+categories:
+  - "Art"
+  - "Personal"
+  - "Research"
 ---
-
-## El toro más fuerte
-**2019 · Animation · Academic Project**
-
 *"Your words were still present", Animation, 1 min. 2019.*
 
 "The Strongest Bull" delves into the artist's personal experience of family disappearance, aiming to resonate with broader themes of disappearance through imagery that prompts reflection in viewers. The project serves as a critique of family narratives, archives, memories, media, and societal realities. It seeks to prompt reconsideration of entrenched structures, rather than offering solutions to societal forgetfulness and indifference towards historical memory processes.

@@ -2,18 +2,20 @@
 layout: project.njk
 title: "Intermedio para practicar lo inútil"
 year: 2019
-category: "Art"
-type: "Performance · Art Festival"
 status: published
 description: "A performative action at the 2019 Manizales International Contemporary Art Festival (FIAC), consisting of walking very slowly along a busy city street while playing the Shakuhachi flute."
 links:
   - label: "Open call details"
     url: "https://www.ucaldas.edu.co/portal/convocatoria-para-participar-en-cuarto-festival-internacional-de-arte-contemporaneo-de-manizales/"
+categories:
+  - "Art"
+  - "Performance"
+  - "Art Festival"
+  - "Design"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
-
-## Intermedio para practicar lo inútil
-**2019 · Performance · Art Festival**
-
 Byung Chul Han in his book "Saving Beauty" says something very interesting referring to our social imperative:
 
 > "Polished and impeccable things do no harm. It also offers no resistance. The polished object nullifies what it has of something placed in front of it. All negativity is eliminated."

@@ -16,8 +16,7 @@ description: "Jerónimo Gutiérrez Balanta — Full Portfolio View"
     "url": {{ project.url | dump | safe }},
     "title": {{ project.data.title | dump | safe }},
     "year": {{ project.data.year | dump | safe }},
-    "type": {{ project.data.type | dump | safe }},
-    "category": {{ project.data.category | dump | safe }},
+    "categories": {{ project.data.categories | default([]) | dump | safe }},
     "description": {{ project.data.description | dump | safe }},
     "content": {{ project.templateContent | dump | safe }},
     "images": {% if project.data.images %}{{ project.data.images | dump | safe }}{% else %}[]{% endif %}
@@ -116,12 +115,11 @@ description: "Jerónimo Gutiérrez Balanta — Full Portfolio View"
 
     {# Project / page preview state #}
     <div class="pv-middle-project" id="pv-project-view">
-      <p class="pv-proj-year-type" id="pv-proj-year-type"></p>
       <h2 class="pv-proj-title" id="pv-proj-title"></h2>
+      <div class="pv-proj-categories" id="pv-proj-categories"></div>
       <p class="pv-proj-description" id="pv-proj-description"></p>
       <div class="pv-proj-body" id="pv-proj-body"></div>
       <div class="pv-proj-images" id="pv-proj-images"></div>
-      <a class="pv-proj-link" id="pv-proj-link" href="#" style="display:none;">Open full page →</a>
     </div>
 
   </main>

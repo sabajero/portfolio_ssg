@@ -2,15 +2,16 @@
 layout: project.njk
 title: "Visual Thinking"
 year: 2020
-category: "Design"
-type: "Graphic Design · Freelance"
 status: published
 description: "Live Visual Thinking and graphic design for webinars, workshops, and academic events at Universidad Javeriana, Icesi, OEM, Oxfam, CVC, and Universidad del Valle — 2020 to 2022."
+categories:
+  - "Design"
+  - "Graphic Design"
+  - "Freelance"
+  - "Art"
+  - "Personal"
+  - "Research"
 ---
-
-## Visual Thinking
-**2020–2022 · Graphic Design · Freelance**
-
 Between 2020 and 2021, when I was in the last semesters of my undergraduate degree at the university, the Faculty of Economics at the Javeriana University was looking for an artist or designer who could do live "visual thinking" in webinars and talks that were going to be carried out as a strategy to promote economic issues in the pandemic. I accepted the challenge and ended up working with the faculties of accounting, marketing and economics. I was working at this institution in a contract to provide services for a little over a year, where I accompanied different events, talks and designed visual pieces for podcasts, academic publications, social networks, etc.
 
 These projects eventually led me to carry out Visual Thinkings for organizations such as the OEM (observatory for women's equality, Icesi University), Oxfam Intermón, Universidad del Valle, CVC (The Regional Autonomous Corporation of Valle del Cauca or CVC) and some private companies that sought to archive their talks, processes or webinars in a fun way.

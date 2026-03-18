@@ -2,21 +2,22 @@
 layout: project.njk
 title: "Aura Coffee Company"
 year: 2025
-category: "Art-Research"
-type: "Audio Essay · Documentation"
 status: published
 description: "Reflecting through sound theories about family narratives, labor and inequality. An exploration of the life of my great aunt Aura, who worked in the Merino coffee factory in the 60s."
+categories:
+  - "Art-Research, audio"
+  - "Audio Essay"
+  - "Design"
+  - "Art"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
 
-## Aura Coffee Company
-**2025 · Audio Essay · Documentation**
-*Winter Semester 24', HfK Bremen*
-
-Reflecting through sound theories about family narratives, labor and inequality.
 
 ---
 
-### Introducción / Introduction
+## Introducción / Introduction
 
 **ES**
 En el epitafio de Aura Maria Cobo se lee lo siguiente:

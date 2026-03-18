@@ -2,15 +2,17 @@
 layout: project.njk
 title: "How to shit on your company"
 year: 2025
-category: "Design"
-type: "Essay · User Manual"
 status: published
 description: "Some reflections around outsourcing, Amazon digital labor and postcapitalism imaginaries. A user manual exploring corporate subversion through speculative design."
+categories:
+  - "Design"
+  - "Essay"
+  - "User Manual"
+  - "Art"
+  - "Freelance"
+  - "Personal"
+  - "Research"
 ---
-
-## How to shit on your company
-**2025 · Essay · User Manual / Graphic Design**
-
 *Some reflections around outsourcing, Amazon digital labor and postcapitalism imaginaries.*
 
 ---

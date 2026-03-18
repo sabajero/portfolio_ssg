@@ -2,8 +2,6 @@
 layout: project.njk
 title: "Aleteo Shakuhachi Project"
 year: 2019
-category: "Art"
-type: "Educational / Musical Project"
 status: published
 description: "An artistic and educational project to teach, build and explore the possibilities of the Japanese Shakuhachi flute outside of meditation contexts, founded by Akim Dibbá Angulo Gómez, Carlos Chacón and Jerónimo Gutiérrez Balanta."
 links:
@@ -11,11 +9,11 @@ links:
     url: "https://www.facebook.com/profile.php?id=100070093427734"
   - label: "Interview 360° video"
     url: "https://www.youtube.com/watch?v=XuXnmje0cSk&t=2s&ab_channel=sabajero"
+categories:
+  - "Art"
+  - "Education"
+  - "Personal"
 ---
-
-## Aleteo Shakuhachi Project
-**2019–2020 · Educational / Musical Project**
-
 Aleteo Shakuhachi Project is a project that has been on hiatus since 2020 and was born from the search of three friends in Cali, Colombia, to share the knowledge of the construction, teaching, interpretation and meditation of Shakuhachi and bamboo. One of the objectives is to allow the opening of this instrument in contexts other than meditation.
 
 The project was conceived by Akim Dibbá Angulo Gómez, Carlos Chacón and Jerónimo Gutiérrez Balanta and workshops were effectively carried out in places such as the Universidad del Valle Cali and the Community of Christians of Cali.

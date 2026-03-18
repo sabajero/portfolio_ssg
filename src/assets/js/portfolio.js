@@ -15,23 +15,23 @@
   'use strict';
 
   // ── DOM refs ────────────────────────────────────────────
-  const panelMiddle  = document.getElementById('pv-middle');
-  const introBlock   = document.getElementById('pv-intro');
-  const defaultView  = document.getElementById('pv-default');
-  const projectView  = document.getElementById('pv-project-view');
-  const zoomImage    = document.getElementById('pv-zoom-image');
-  const zoomImg      = document.getElementById('pv-zoom-img');
+  const panelMiddle = document.getElementById('pv-middle');
+  const introBlock = document.getElementById('pv-intro');
+  const defaultView = document.getElementById('pv-default');
+  const projectView = document.getElementById('pv-project-view');
+  const zoomImage = document.getElementById('pv-zoom-image');
+  const zoomImg = document.getElementById('pv-zoom-img');
   const rightDefault = document.getElementById('pv-right-default');
-  const nameEl       = document.getElementById('pv-name');
-  const worksToggle  = document.getElementById('pv-works-toggle');
-  const worksList    = document.getElementById('pv-works-list');
+  const nameEl = document.getElementById('pv-name');
+  const worksToggle = document.getElementById('pv-works-toggle');
+  const worksList = document.getElementById('pv-works-list');
 
   // ── Parse data ──────────────────────────────────────────
   const projectDataEl = document.getElementById('pv-project-data');
-  const pageDataEl    = document.getElementById('pv-page-data');
+  const pageDataEl = document.getElementById('pv-page-data');
 
   let projects = [];
-  let pages    = {};
+  let pages = {};
 
   try { projects = JSON.parse(projectDataEl.textContent); }
   catch (e) { console.error('[portfolio.js] Failed to parse project data:', e.message); }
@@ -79,11 +79,13 @@
   }
 
   // ── Middle panel helpers ─────────────────────────────────
-  function showMiddle({ yearType = '', title = '', description = '', content = '', images = [], url = '', isPage = false }) {
-    document.getElementById('pv-proj-year-type').textContent  = yearType;
-    document.getElementById('pv-proj-title').textContent      = title;
+  function showMiddle({ categoriesHtml = '', title = '', description = '', content = '', images = [], url = '', isPage = false }) {
+    const catContainer = document.getElementById('pv-proj-categories');
+    if (catContainer) catContainer.innerHTML = categoriesHtml;
+
+    document.getElementById('pv-proj-title').textContent = title;
     document.getElementById('pv-proj-description').textContent = description;
-    document.getElementById('pv-proj-body').innerHTML         = content;
+    document.getElementById('pv-proj-body').innerHTML = content;
 
     const gallery = document.getElementById('pv-proj-images');
     gallery.innerHTML = '';
@@ -95,15 +97,13 @@
       });
     }
 
-    const link = document.getElementById('pv-proj-link');
-    if (url && !isPage) { link.href = url; link.style.display = ''; }
-    else { link.style.display = 'none'; }
+    // Link has been removed per user request, so omitted.
 
     bindImageZoom(document.getElementById('pv-proj-body'));
     bindImageZoom(gallery);
 
-    defaultView.style.display  = 'none';
-    projectView.style.display  = 'block';
+    defaultView.style.display = 'none';
+    projectView.style.display = 'block';
     projectView.classList.add('is-visible');
 
     // Force restart animation
@@ -141,25 +141,45 @@
   function bindImageZoom(container) {
     if (!container) return;
     container.querySelectorAll('img').forEach(img => {
-      img.addEventListener('mouseenter', () => showZoom(img.src, img.alt));
-      
+      let isHovering = false;
+      let targetX = 50;
+      let targetY = 50;
+      let ticking = false;
+
+      img.addEventListener('mouseenter', () => {
+        isHovering = true;
+        showZoom(img.src, img.alt);
+      });
+
+      const updateZoom = () => {
+        if (!isHovering) return;
+        zoomImage.style.setProperty('--zoom-x', `${targetX}%`);
+        zoomImage.style.setProperty('--zoom-y', `${targetY}%`);
+        ticking = false;
+      };
+
       // Calculate and apply mouse position as CSS variables
       img.addEventListener('mousemove', (e) => {
         const rect = img.getBoundingClientRect();
-        
+
         // Calculate raw percentages based on cursor position inside the element
         let xPos = ((e.clientX - rect.left) / rect.width) * 100;
         let yPos = ((e.clientY - rect.top) / rect.height) * 100;
-        
+
         // Bound the percentages so panning doesn't jump off edges
-        xPos = Math.max(0, Math.min(100, xPos));
-        yPos = Math.max(0, Math.min(100, yPos));
-        
-        zoomImage.style.setProperty('--zoom-x', `${xPos}%`);
-        zoomImage.style.setProperty('--zoom-y', `${yPos}%`);
+        targetX = Math.max(0, Math.min(100, xPos));
+        targetY = Math.max(0, Math.min(100, yPos));
+
+        if (!ticking) {
+          requestAnimationFrame(updateZoom);
+          ticking = true;
+        }
       });
 
-      img.addEventListener('mouseleave', clearZoom);
+      img.addEventListener('mouseleave', () => {
+        isHovering = false;
+        clearZoom();
+      });
     });
   }
 
@@ -197,14 +217,41 @@
       const proj = projects.find(p => p.slug === slug);
       if (!proj) return;
 
+      const finalCats = (proj.categories || []).slice(0, 5);
+      const catHtml = finalCats.map(c => {
+        // ✅ Define your custom HEX colors per category here:
+        const customColors = {
+          "Design": "#1255ffff",
+          "Art": "#a72cffff",
+          "Freelance": "#8bb9f9ff",
+          "Personal": "#e2ff78ff",
+          "Research": "#808080"
+        };
+
+        let bg = customColors[c];
+
+        if (!bg) {
+          // Default dynamic gray for unexpected categories
+          let hash = 0;
+          for (let i = 0; i < c.length; i++) hash += c.charCodeAt(i);
+          const val = 80 + (hash % 100);
+          bg = `rgb(${val},${val},${val})`;
+        }
+
+        return `<span class="cat-pill" style="--cat-bg: ${bg}">
+          <span class="cat-pill-icon">${c.charAt(0)}</span>
+          <span class="cat-pill-text">${c.slice(1)}</span>
+        </span>`;
+      }).join('');
+
       showMiddle({
-        yearType:    [proj.year, proj.type, proj.category].filter(Boolean).join(' · ').toUpperCase(),
-        title:       proj.title,
+        categoriesHtml: catHtml,
+        title: proj.title,
         description: proj.description || '',
-        content:     proj.content || '',
-        images:      proj.images,
-        url:         proj.url,
-        isPage:      false
+        content: proj.content || '',
+        images: proj.images,
+        url: '', // removed project link
+        isPage: false
       });
     });
 
@@ -230,13 +277,13 @@
       if (!page) return;
 
       showMiddle({
-        yearType:    '',
-        title:       page.title,
+        yearType: '',
+        title: page.title,
         description: '',
-        content:     page.content || '',
-        images:      [],
-        url:         '',
-        isPage:      true
+        content: page.content || '',
+        images: [],
+        url: '',
+        isPage: true
       });
     });
 

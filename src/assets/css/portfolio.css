@@ -5,14 +5,15 @@
 
 /* ── Design tokens ───────────────────────────────────────── */
 :root {
-  --pv-accent:    #8153ff;   /* Same purple as main site */
-  --pv-bg:        #ffffff;
-  --pv-text:      #111111;
-  --pv-muted:     rgba(0,0,0,0.38);
-  --pv-dim:       rgba(0,0,0,0.6);
-  --pv-border:    rgba(0,0,0,0.07);
-  --pv-font-sm:   0.78rem;
-  --pv-font-xs:   0.65rem;
+  --pv-accent: #8153ff;
+  /* Same purple as main site */
+  --pv-bg: #ffffff;
+  --pv-text: #111111;
+  --pv-muted: rgba(0, 0, 0, 0.38);
+  --pv-dim: rgba(0, 0, 0, 0.6);
+  --pv-border: rgba(0, 0, 0, 0.07);
+  --pv-font-sm: 0.85rem;
+  --pv-font-xs: 0.7rem;
 }
 
 /* ── RESET & ROOT ────────────────────────────────────────── */
@@ -59,15 +60,22 @@ body.portfolio-view .site-nav {
 
   /* Light square scrollbar */
   scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.05) transparent;
+  scrollbar-color: rgba(0, 0, 0, 0.05) transparent;
 }
 
 /* WebKit square scrollbar — light */
-.pv-left::-webkit-scrollbar        { width: 8px; }
-.pv-left::-webkit-scrollbar-track  { background: transparent; }
-.pv-left::-webkit-scrollbar-thumb  {
-  background: rgba(0,0,0,0.05);
-  border-radius: 0;          /* square corners */
+.pv-left::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pv-left::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pv-left::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  /* square corners */
   min-height: 8px;
   max-height: 8px;
 }
@@ -111,6 +119,12 @@ body.portfolio-view .site-nav {
   line-height: 1.1;
   margin-bottom: 0.6rem;
   color: var(--pv-text);
+  transition: color 150ms ease;
+  cursor: pointer;
+}
+
+.pv-name:hover {
+  color: #01ff6f;
 }
 
 /* BIO */
@@ -120,8 +134,8 @@ body.portfolio-view .site-nav {
 
 /* LOCATION */
 .pv-location {
-  font-size: 1.1rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 200;
   color: var(--pv-muted);
   letter-spacing: 0.01em;
   margin-bottom: 0;
@@ -237,6 +251,7 @@ body.portfolio-view .site-nav {
   color: var(--pv-accent);
   border-bottom-color: var(--pv-accent);
 }
+
 .pv-project-item:hover .pv-project-year,
 .pv-project-item.is-active .pv-project-year {
   color: var(--pv-accent);
@@ -256,13 +271,19 @@ body.portfolio-view .site-nav {
   position: relative;
 
   scrollbar-width: thin;
-  scrollbar-color: rgba(0,0,0,0.05) transparent;
+  scrollbar-color: rgba(0, 0, 0, 0.05) transparent;
 }
 
-.pv-middle::-webkit-scrollbar        { width: 8px; }
-.pv-middle::-webkit-scrollbar-track  { background: transparent; }
-.pv-middle::-webkit-scrollbar-thumb  {
-  background: rgba(0,0,0,0.05);
+.pv-middle::-webkit-scrollbar {
+  width: 8px;
+}
+
+.pv-middle::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.pv-middle::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 0;
   min-height: 8px;
   max-height: 8px;
@@ -296,7 +317,7 @@ body.portfolio-view .site-nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0,0,0,0.2);
+  color: rgba(0, 0, 0, 0.2);
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -324,25 +345,79 @@ body.portfolio-view .site-nav {
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.pv-proj-year-type {
-  font-size: 0.7rem;
-  font-weight: 300;
-  color: var(--pv-muted);
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5rem;
+.pv-proj-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Categories Animated Pill */
+.cat-pill {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--cat-bg, #888);
+  color: #fff;
+  border-radius: 50px;
+  height: 36px;
+  max-width: 36px;
+  overflow: hidden;
+  transition: max-width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: default;
+  white-space: nowrap;
+}
+
+.cat-pill:hover {
+  max-width: 220px;
+}
+
+.cat-pill-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.cat-pill-text {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-right: 14px;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition-delay: 0s;
+}
+
+.cat-pill:hover .cat-pill-text {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.1s;
 }
 
 .pv-proj-title {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 200;
+  font-size: 3.8rem;
+  font-weight: 230;
   letter-spacing: -0.02em;
-  line-height: 1.1;
+  line-height: 1.0;
   margin-bottom: 1rem;
   color: var(--pv-text);
 }
@@ -372,15 +447,36 @@ body.portfolio-view .site-nav {
   letter-spacing: 0.08em;
 }
 
-.pv-proj-body p    { margin-bottom: 0.8rem; }
-.pv-proj-body em   { color: var(--pv-muted); font-style: italic; }
-.pv-proj-body strong { font-weight: 600; color: var(--pv-text); }
-.pv-proj-body hr   { display: none; }
-.pv-proj-body a    { color: var(--pv-accent); border-bottom: 1px solid transparent; transition: border-color 150ms; }
-.pv-proj-body a:hover { border-bottom-color: var(--pv-accent); }
+.pv-proj-body p {
+  margin-bottom: 0.8rem;
+}
+
+.pv-proj-body em {
+  color: var(--pv-muted);
+  font-style: italic;
+}
+
+.pv-proj-body strong {
+  font-weight: 600;
+  color: var(--pv-text);
+}
+
+.pv-proj-body hr {
+  display: none;
+}
+
+.pv-proj-body a {
+  color: var(--pv-accent);
+  border-bottom: 1px solid transparent;
+  transition: border-color 150ms;
+}
+
+.pv-proj-body a:hover {
+  border-bottom-color: var(--pv-accent);
+}
 
 .pv-proj-body blockquote {
-  border-left: 2px solid rgba(0,0,0,0.12);
+  border-left: 2px solid rgba(0, 0, 0, 0.12);
   padding-left: 1rem;
   color: var(--pv-muted);
   margin: 1rem 0;
@@ -398,7 +494,9 @@ body.portfolio-view .site-nav {
 }
 
 .pv-proj-body img:hover,
-.pv-proj-images img:hover { opacity: 0.82; }
+.pv-proj-images img:hover {
+  opacity: 0.82;
+}
 
 .pv-proj-images {
   display: grid;
@@ -426,7 +524,9 @@ body.portfolio-view .site-nav {
   transition: opacity 150ms;
 }
 
-.pv-proj-link:hover { opacity: 0.65; }
+.pv-proj-link:hover {
+  opacity: 0.65;
+}
 
 
 /* ═══════════════════════════════════════════════════════════
@@ -490,13 +590,15 @@ body.portfolio-view .site-nav {
   height: 100%;
   object-fit: cover;
   display: block;
-  
+
+  /* Force hardware acceleration for paint performance */
+  will-change: transform, transform-origin;
+
   /* Magnifying effect */
   transform: scale(2.5);
   /* The variables default to 50% 50% but will be updated by JS */
   transform-origin: var(--zoom-x, 50%) var(--zoom-y, 50%);
-  /* A smooth trail to the mouse movement */
-  transition: transform-origin 100ms ease-out;
+  /* Transition removed to allow 1:1 real-time mouse tracking without stutter */
 }
 
 
@@ -515,11 +617,13 @@ body.portfolio-view .site-nav {
   }
 
   .pv-intro {
-    position: relative; /* disable sticky on mobile */
+    position: relative;
+    /* disable sticky on mobile */
   }
 
   .pv-section-heading {
-    position: relative; /* disable sticky on mobile */
+    position: relative;
+    /* disable sticky on mobile */
   }
 
   .pv-middle {
@@ -527,5 +631,7 @@ body.portfolio-view .site-nav {
     border-right: none;
   }
 
-  .pv-right { display: none; }
+  .pv-right {
+    display: none;
+  }
 }
