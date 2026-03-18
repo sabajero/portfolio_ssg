@@ -84,7 +84,28 @@
     if (catContainer) catContainer.innerHTML = categoriesHtml;
 
     document.getElementById('pv-proj-title').textContent = title;
-    document.getElementById('pv-proj-description').textContent = description;
+    
+    const descEl = document.getElementById('pv-proj-description');
+    if (descEl) {
+      if (description) {
+        // Convert [Text](url) into clickable Hyperlinks securely
+        const safeDesc = description
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, text, url) => {
+            let href = url.trim();
+            // Prefix https:// if it is a standard domain without a protocol
+            if (!href.startsWith('http') && !href.startsWith('/') && !href.startsWith('#')) {
+              href = 'https://' + href;
+            }
+            return `<a href="${href}" target="_blank" rel="noopener noreferrer" style="color: var(--pv-accent); text-decoration: underline;">${text}</a>`;
+          });
+        descEl.innerHTML = safeDesc;
+      } else {
+        descEl.innerHTML = '';
+      }
+    }
     document.getElementById('pv-proj-body').innerHTML = content;
 
     const gallery = document.getElementById('pv-proj-images');
@@ -222,10 +243,10 @@
         // ✅ Define your custom HEX colors per category here:
         const customColors = {
           "Design": "#1255ffff",
-          "Art": "#a72cffff",
+          "Art": "#8153ff",
           "Freelance": "#8bb9f9ff",
-          "Personal": "#e2ff78ff",
-          "Research": "#808080"
+          "Personal": "#7d763fff",
+          "Research": "#f9731fff"
         };
 
         let bg = customColors[c];

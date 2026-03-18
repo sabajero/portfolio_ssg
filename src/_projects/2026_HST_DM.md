@@ -1,14 +1,13 @@
 ---
 layout: project.njk
-title: "Digital Media Bremen Hochschultage 2026 - Visual Presence"
+title: "Digital Media Bremen Hochschultage - Visual Presence"
 year: 2026
 status: Finished
-description: "I was invited to create a visual identity for the Digital Media Bremen program at HfK Bremen for Hochschultage 2026"
+description: "I was invited to create the visual identity for the Digital Media Bremen program at HfK Bremen for Hochschultage 2026, this included organization, room map, posters and web archive -> [www.hst2026.digitalmedia-bremen.de](https://hst2026.digitalmedia-bremen.de)"
 categories:
-  - "Graphic Design"
+  - "Design"
   - "Freelance"
-  - "Web Design"
-  - "Documentation"
+  
   
 ---
 ---

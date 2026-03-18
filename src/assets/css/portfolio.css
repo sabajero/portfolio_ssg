@@ -336,7 +336,7 @@ body.portfolio-view .site-nav {
 /* ── Project / Page preview state ────────────────────────── */
 .pv-middle-project {
   display: none;
-  padding: 2.5rem 2.5rem 4rem;
+  padding: 3.5rem 2.5rem 4rem;
   animation: fadeUp 260ms ease both;
 }
 

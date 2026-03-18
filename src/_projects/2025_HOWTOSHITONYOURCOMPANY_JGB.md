@@ -5,13 +5,8 @@ year: 2025
 status: published
 description: "Some reflections around outsourcing, Amazon digital labor and postcapitalism imaginaries. A user manual exploring corporate subversion through speculative design."
 categories:
-  - "Design"
-  - "Essay"
-  - "User Manual"
-  - "Art"
-  - "Freelance"
-  - "Personal"
   - "Research"
+  - "Design"
 ---
 *Some reflections around outsourcing, Amazon digital labor and postcapitalism imaginaries.*
 
