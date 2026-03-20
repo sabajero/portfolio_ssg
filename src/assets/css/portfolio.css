@@ -621,36 +621,205 @@ body.portfolio-view .site-nav {
 }
 
 
+/* ── BURGER MENU AND MOBILE SLIDER (Desktop Hidden) ──────── */
+.pv-intro-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.pv-burger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 60;
+  width: 32px;
+  height: 24px;
+  position: relative;
+}
+
+.pv-burger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--pv-text);
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.pv-burger span:nth-child(1) { top: 0; }
+.pv-burger span:nth-child(2) { top: 11px; }
+.pv-burger span:nth-child(3) { top: 22px; }
+
+.pv-burger.is-active span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.pv-burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+.pv-burger.is-active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.pv-mobile-slider {
+  display: none;
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 900px) {
-  .pv-shell {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+  body.portfolio-view {
+    /* Prevent pull-to-refresh and elastic scrolling on mobile */
+    overscroll-behavior-y: none;
   }
 
+  .pv-shell {
+    display: block;
+    width: 100vw;
+    height: 100dvh;
+  }
+
+  /* Disable original left layout logic */
   .pv-left {
-    height: auto;
-    max-height: 50dvh;
-    border-right: none;
+    height: 0;
+    width: 0;
+    overflow: visible;
+    position: static;
+  }
+
+  /* Fixed Mobile Header */
+  .pv-intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    background: var(--pv-bg);
+    padding: 1rem 1.5rem;
     border-bottom: 1px solid var(--pv-border);
   }
 
-  .pv-intro {
-    position: relative;
-    /* disable sticky on mobile */
+  .pv-intro-inner {
+    align-items: center;
   }
 
-  .pv-section-heading {
-    position: relative;
-    /* disable sticky on mobile */
+  .pv-name {
+    font-size: 1.4rem;
+    margin-bottom: 0.1rem;
   }
 
+  .pv-location {
+    font-size: 0.95rem;
+  }
+
+  /* Show Burger */
+  .pv-burger {
+    display: block;
+  }
+
+  /* Off-canvas Sidebar */
+  .pv-sections {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 320px;
+    height: 100dvh;
+    padding: 6rem 1.5rem 2rem; /* Give space for header */
+    background: var(--pv-bg);
+    z-index: 45; /* Sits below the fixed header so burger is always clickable */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+    border-right: 1px solid var(--pv-border);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05); /* subtle shadow */
+  }
+
+  .pv-sections.is-open {
+    transform: translateX(0);
+  }
+
+  /* Main View Area */
   .pv-middle {
-    height: 50dvh;
+    height: 100dvh;
+    width: 100%;
+    padding-top: 5rem; /* Ensure content is below header */
     border-right: none;
   }
 
+  /* Don't shrink the default state view awkwardly */
+  .pv-portrait {
+    max-height: 50vh;
+  }
+
+  /* Hide zoom panel entirely */
   .pv-right {
     display: none;
+  }
+
+  /* Show Custom Mobile Slider */
+  .pv-mobile-slider {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 35px; /* Comfortable touch target width */
+    height: 100dvh;
+    z-index: 60;
+    align-items: center;
+    justify-content: center;
+    touch-action: none; /* Prevent browser scrolling to allow clean drag tracking */
+  }
+
+  .pv-mobile-slider-track {
+    position: absolute;
+    right: 17px;
+    top: 15%;
+    bottom: 15%;
+    width: 1px;
+    background-color: var(--pv-accent);
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .pv-mobile-slider-dots {
+    position: absolute;
+    right: 15.5px; /* Centered visually with track */
+    top: 15%;
+    bottom: 15%;
+    width: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .pv-mobile-slider-dot {
+    width: 4px;
+    height: 4px;
+    background-color: var(--pv-accent);
+    border-radius: 50%;
+  }
+
+  .pv-mobile-slider-active {
+    position: absolute;
+    right: 8px; /* Offset the 18px circle to visually center with the 1px track */
+    width: 20px;
+    height: 20px;
+    background-color: #f9731fff; /* Orange */
+    border-radius: 50%;
+    z-index: 3;
+    transform: scale(0);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+    pointer-events: none;
+  }
+  
+  .pv-mobile-slider.is-interacting .pv-mobile-slider-active {
+    transform: scale(1);
+    transition: transform 0.05s ease; /* Snappy follow, no decay wait */
   }
 }

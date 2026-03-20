@@ -76,12 +76,22 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 
     {# Intro block — sticky ─ #}
     <div class="pv-intro" id="pv-intro">
+      
+      <div class="pv-intro-inner">
+        <div class="pv-intro-text">
+          {# Name — mixed case, no caps #}
+          <h1 class="pv-name" id="pv-name">Jerónimo Gutiérrez Balanta</h1>
 
-      {# Name — mixed case, no caps #}
-      <h1 class="pv-name" id="pv-name">Jerónimo Gutiérrez Balanta</h1>
-
-      {# Location #}
-      <p class="pv-location">Cali (CO) ↔ Bremen (DE)</p>
+          {# Location #}
+          <p class="pv-location">Cali (CO) ↔ Bremen (DE)</p>
+        </div>
+        
+        <button class="pv-burger" id="pv-burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
     </div>{# /pv-intro #}
 
@@ -182,6 +192,13 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
     </div>
 
   </aside>
+
+  {# ════════ MOBILE SLIDER (Appended here) ════════ #}
+  <div class="pv-mobile-slider" id="pv-mobile-slider">
+    <div class="pv-mobile-slider-track"></div>
+    <div class="pv-mobile-slider-dots" id="pv-mobile-slider-dots"></div>
+    <div class="pv-mobile-slider-active" id="pv-mobile-slider-active"></div>
+  </div>
 
 </div>
 
