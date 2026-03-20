@@ -26,6 +26,11 @@
   const worksToggle = document.getElementById('pv-works-toggle');
   const worksList = document.getElementById('pv-works-list');
 
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryDataEl = document.getElementById('pv-gallery-data');
+    window.pvGalleryImages = galleryDataEl ? galleryDataEl.innerHTML.split('|pv|').map(s => s.trim()).filter(Boolean) : [];
+  });
+
   // ── Parse data ──────────────────────────────────────────
   const projectDataEl = document.getElementById('pv-project-data');
   const pageDataEl = document.getElementById('pv-page-data');
@@ -84,7 +89,7 @@
     if (catContainer) catContainer.innerHTML = categoriesHtml;
 
     document.getElementById('pv-proj-title').textContent = title;
-    
+
     const descEl = document.getElementById('pv-proj-description');
     if (descEl) {
       if (description) {
@@ -123,7 +128,10 @@
     bindImageZoom(document.getElementById('pv-proj-body'));
     bindImageZoom(gallery);
 
+    const randomView = document.getElementById('pv-random-view');
+
     defaultView.style.display = 'none';
+    if (randomView) randomView.style.display = 'none';
     projectView.style.display = 'block';
     projectView.classList.add('is-visible');
 
@@ -136,8 +144,10 @@
   }
 
   function showDefault() {
+    const randomView = document.getElementById('pv-random-view');
     projectView.classList.remove('is-visible');
     projectView.style.display = 'none';
+    if (randomView) randomView.style.display = 'none';
     defaultView.style.display = 'flex';
     clearActive();
     clearZoom();
@@ -225,6 +235,25 @@
     });
   }
 
+  // ── Works title hover → show random project image ─────────
+  if (worksToggle) {
+    worksToggle.addEventListener('mouseenter', () => {
+      clearActive();
+      const randomView = document.getElementById('pv-random-view');
+      const randomImg = document.getElementById('pv-random-img');
+      if (randomView && randomImg && window.pvGalleryImages && window.pvGalleryImages.length > 0) {
+        projectView.classList.remove('is-visible');
+        projectView.style.display = 'none';
+        defaultView.style.display = 'none';
+        
+        const randIndex = Math.floor(Math.random() * window.pvGalleryImages.length);
+        randomImg.src = window.pvGalleryImages[randIndex];
+        
+        randomView.style.display = 'flex';
+      }
+    });
+  }
+
   // ── Project item hovers ──────────────────────────────────
   document.querySelectorAll('.pv-project-item').forEach(item => {
     const slug = item.dataset.slug;
@@ -246,7 +275,7 @@
           "Art": "#8153ff",
           "Freelance": "#8bb9f9ff",
           "Personal": "#7d763fff",
-          "Research": "#f9731fff"
+          "Research": "#f9731fff",
         };
 
         let bg = customColors[c];

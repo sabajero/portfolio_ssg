@@ -13,6 +13,23 @@ categories:
   - "Art"
   - "Education"
   - "Personal"
+images:
+  - "/assets/images/projects/2019_ALETEO/Shaku_0210.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0219.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0220.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0447.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0481.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0499.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0524.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0589.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0632.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0635.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_0694.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_group.webp"
+  - "/assets/images/projects/2019_ALETEO/Shaku_logo.png"
+  - "/assets/images/projects/2019_ALETEO/Shaku_poster.webp"
+  - "/assets/images/projects/2019_ALETEO/Shakuh áspera.webp"
+  - "/assets/images/projects/2019_ALETEO/shaku_group_2.webp"
 ---
 Aleteo Shakuhachi Project is a project that has been on hiatus since 2020 and was born from the search of three friends in Cali, Colombia, to share the knowledge of the construction, teaching, interpretation and meditation of Shakuhachi and bamboo. One of the objectives is to allow the opening of this instrument in contexts other than meditation.
 

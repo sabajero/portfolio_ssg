@@ -11,12 +11,7 @@ links:
     url: "https://www.javeriana.edu.co/pesquisa/empoderamiento-mujeres-caficultoras-cauca/"
 categories:
   - "Design"
-  - "Graphic Design"
   - "Freelance"
-  - "University"
-  - "Art"
-  - "Personal"
-  - "Research"
 ---
 Graphic material for the socialization of project results: **"Factors that influence the empowerment of women coffee growers in Cauca associated with AMUCC"** — Graphic design for Universidad Javeriana on a project with AMUCC, Fundación WWB Colombia, Tecnicafé.
 

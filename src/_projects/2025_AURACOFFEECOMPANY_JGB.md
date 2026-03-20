@@ -6,8 +6,8 @@ type: "Audio Essay"
 status: published
 description: "Reflecting through sound theories about family narratives, labor and inequality. An exploration of the life of my great aunt Aura, who worked in the Merino coffee factory in the 60s."
 categories:
-    - "Research"
     - "Art"
+    - "Research"
 ---
 
 

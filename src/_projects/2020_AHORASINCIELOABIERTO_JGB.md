@@ -12,12 +12,8 @@ links:
     url: "https://www.cali.gov.co/cultura/publicaciones/153424/areas-convocatoria-unidos-por-la-vida-2020/"
 categories:
   - "Art"
-  - "Watercolor"
-  - "Regional Grant Project"
-  - "Design"
-  - "Freelance"
-  - "Personal"
   - "Research"
+  - "Grant"
 ---
 "Now, Without an Open Sky" is an artistic research project aimed at capturing the emotions, thoughts, and experiences of 10 young university students during the confinement brought about by the Covid-19 pandemic in Cali. Each illustration was born from dialogue with the participants, focusing on what they deemed significant to be depicted. The culmination of this project are ten watercolor paintings, each offering insights into the city and the confinement experience from an intimate perspective. This project is hosted within the virtual exhibition at ahorasincieloabierto.tumblr.com.
 

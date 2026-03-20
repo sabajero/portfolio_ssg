@@ -11,13 +11,9 @@ links:
     url: "https://artspaces.kunstmatrix.com/en/exhibition/1791720/gr%C3%A1fica-y-educaci%C3%B3n-art%C3%ADstica"
 categories:
   - "Art"
-  - "Engraving"
-  - "Internship"
-  - "Group show"
-  - "Design"
-  - "Freelance"
-  - "Personal"
   - "Research"
+  - "Internship"
+  
 ---
 "Graphic arts and art education" was the project where I had an internship as part of my undergraduate requirements in 2021. It was a remote internship (Due to Covid regulations in Colombia) with the research group "GICAEA" on the project ARTGRALAB (Art-Engraving-Lab) at Valle University, focusing on education and artistic creation with a focus both on experimental and classic engraving techniques.
 

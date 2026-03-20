@@ -9,12 +9,18 @@ links:
     url: "https://www.ucaldas.edu.co/portal/convocatoria-para-participar-en-cuarto-festival-internacional-de-arte-contemporaneo-de-manizales/"
 categories:
   - "Art"
-  - "Performance"
-  - "Art Festival"
-  - "Design"
-  - "Freelance"
-  - "Personal"
-  - "Research"
+images:
+  - "/assets/images/projects/2019_PERFORMANCE/& imagenes.png"
+  - "/assets/images/projects/2019_PERFORMANCE/1_Performance.png"
+  - "/assets/images/projects/2019_PERFORMANCE/Captura de pantalla 2022-05-30 194716.png"
+  - "/assets/images/projects/2019_PERFORMANCE/Captura de pantalla 2022-05-30 200007.png"
+  - "/assets/images/projects/2019_PERFORMANCE/FIAC 2.png"
+  - "/assets/images/projects/2019_PERFORMANCE/FIAC.jpg"
+  - "/assets/images/projects/2019_PERFORMANCE/IMG_20190920_162240417.jpg"
+  - "/assets/images/projects/2019_PERFORMANCE/IMG_20190920_173437716_HDR~2.jpg"
+  - "/assets/images/projects/2019_PERFORMANCE/Perfomance 1.jpg"
+  - "/assets/images/projects/2019_PERFORMANCE/WhatsApp Image 2019-10-28 at 10.15.14 PM.jpeg"
+  - "/assets/images/projects/2019_PERFORMANCE/WhatsApp Image 2019-10-28 at 10.15.19 PM.jpeg"
 ---
 Byung Chul Han in his book "Saving Beauty" says something very interesting referring to our social imperative:
 

@@ -8,12 +8,9 @@ links:
   - label: "About Festival ASCUN"
     url: "https://www.facebook.com/colectivo.teatroentradalibre/"
 categories:
-  - "Personal"
+  - "Group Project"
   - "Theater"
-  - "Design"
-  - "Art"
-  - "Freelance"
-  - "Research"
+  
 ---
 During 2019, I had the opportunity to attend two full courses by prof. Romano Barney Germán at the Faculty of Performing Arts of the Universidad del Valle, where we staged the play "The Giants of the Mountain" and I learned a lot about mask theater and set design. Thanks to this initial exposure to theater and acting, I eventually joined the university's representative group "Entrada Libre," under the direction and organization of Carlos Rojas Neira and his method of neutral mask acting. Here, I had the opportunity to participate as an actor, musician, and also as a photographer for the first performance of the play at Auditorio 4 of the Universidad del Valle de Ubu Rey, famous for Alfred Jarry's theatrical work.
 

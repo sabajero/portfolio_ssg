@@ -503,11 +503,12 @@ body.portfolio-view .site-nav {
 /* Images — hoverable for zoom */
 .pv-proj-body img,
 .pv-proj-images img {
+  display: block;
   max-width: 100%;
   height: auto;
   cursor: zoom-in;
   transition: opacity 200ms ease;
-  margin: 0.75rem 0;
+  margin: 0.75rem auto;
 }
 
 .pv-proj-body img:hover,
@@ -516,16 +517,17 @@ body.portfolio-view .site-nav {
 }
 
 .pv-proj-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.5rem;
+  column-count: 2;
+  column-gap: 0.5rem;
   margin-top: 2rem;
 }
 
 .pv-proj-images img {
   width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  margin-bottom: 0.5rem;
+  /* Original aspect ratio maintained */
 }
 
 /* Link to full project */

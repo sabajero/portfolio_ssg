@@ -30,12 +30,16 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
     href="{{ entry.url }}">{{ entry.data.title or "Untitled" }}</a><span>{{ entry.date | date }}</span></div>{% else %}
 <p>No diary entries yet.</p>{% endfor %}{% endset %}
 
-{# ── Capture Contact and Mentions from collections.all ── #}
+{# ── Capture Custom Pages from collections.all ── #}
+{% set cvPage = null %}
+{% set aboutPage = null %}
 {% set contactPage = null %}
 {% set mentionsPage = null %}
 {% for p in collections.all %}
-  {% if p.fileSlug == 'contact' %}{% set contactPage = p %}{% endif %}
-  {% if p.fileSlug == 'mentions' %}{% set mentionsPage = p %}{% endif %}
+{% if p.fileSlug == 'cv' %}{% set cvPage = p %}{% endif %}
+{% if p.fileSlug == 'about' %}{% set aboutPage = p %}{% endif %}
+{% if p.fileSlug == 'contact' %}{% set contactPage = p %}{% endif %}
+{% if p.fileSlug == 'mentions' %}{% set mentionsPage = p %}{% endif %}
 {% endfor %}
 
 {# ── Static page data (CV / Diary / About / Contact / Mentions) for middle panel #}
@@ -43,15 +47,15 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 {
   "cv": {
     "title": "Curriculum Vitae",
-    "content": "<h2>Education</h2><ul><li><em>2024\u20132026 (ongoing)</em> \u2014 <strong>Master Digital Media</strong>, Hochschule f\u00FCr K\u00FCnste Bremen</li><li><em>2016\u20132022</em> \u2014 <strong>Bachelor of Visual Arts</strong>, Universidad del Valle, Cali \u2014 Meritorious Thesis \u00B7 4.5 avg.</li><li><em>2014\u20132016</em> \u2014 <strong>Technical Certificate</strong>, SENA / Comfandi: Consumer audio &amp; video electronics</li></ul><h2>Scholarships &amp; Certificates</h2><ul><li><em>2024\u20132026</em> \u2014 <strong>DAAD Full Master Scholarship</strong> \u00B7 Fine Art, Design, Visual Communication &amp; Film</li><li><em>2023</em> \u2014 <strong>Google UX Design Specialization</strong>, Coursera</li></ul><h2>Work experience</h2><ul><li><em>May 2023\u2013present (remote)</em> \u2014 <strong>Resolution Specialist</strong>, Amazon</li><li><em>2021\u20132023</em> \u2014 <strong>Graphic Designer &amp; Artist</strong>, Capricci Club Co.</li><li><em>Sep\u2013Dec 2022</em> \u2014 <strong>Visual Thinking &amp; Illustrator</strong>, Universidad Icesi / OEM</li><li><em>Jun\u2013Jul 2022</em> \u2014 <strong>Visual Thinking</strong>, CVC / Universidad del Valle</li><li><em>May 2020\u2013Sep 2021</em> \u2014 <strong>Graphic Designer</strong>, Universidad Javeriana Cali</li><li><em>2019</em> \u2014 <strong>Graphic Designer</strong>, Universidad del Valle \u2014 Disability &amp; Inclusion</li></ul><h2>Languages</h2><ul><li><strong>Spanish</strong> Native \u00B7 <strong>English</strong> IELTS 7.5 \u00B7 <strong>German</strong> B1.2</li></ul><h2>Skills</h2><ul><li>Adobe Suite \u00B7 Figma (Advanced) \u00B7 Visual Thinking \u00B7 Three.js \u00B7 UX Research \u00B7 UI Design \u00B7 AI Prompting</li></ul>"
+    "content": {{ cvPage.templateContent | default('<p>Content coming soon</p>') | dump | safe }}
   },
   "diary": {
     "title": "Diary",
     "content": {{ diaryHtml | dump | safe }}
   },
   "about": {
-    "title": "About",
-    "content": "<p>Jer\u00F3nimo Guti\u00E9rrez Balanta is an artist-researcher and designer based in Bremen (DE), originally from Cali, Colombia. Holder of a DAAD full scholarship for his Master\u2019s in Digital Media at Hochschule f\u00FCr K\u00FCnste Bremen (2024\u20132026).</p><p>His practice moves through labor and interfaces, political violence, illustration, comics, speculative design and commercial work. He was formerly a resolution specialist at Amazon and has worked with NGOs, universities and independent brands in Colombia.</p><p><a href='/about/'>Full bio \u2192</a></p>"
+    "title": "*",
+    "content": {{ aboutPage.templateContent | default('<p>Content coming soon</p>') | dump | safe }}
   },
   "contact": {
     "title": "Contact",
@@ -139,6 +143,19 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
       <img src="/assets/images/jero2.webp" alt="Jerónimo Gutiérrez Balanta" class="pv-portrait" />
       <p class="pv-portrait-caption"></p>
     </div>
+
+    {# Random works hover state #}
+    <div class="pv-middle-random" id="pv-random-view" style="display: none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 3rem 2.5rem; transition: opacity 300ms ease;">
+      <img src="" id="pv-random-img" alt="Random work" style="max-width: 100%; max-height: 65vh; height: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px;" />
+    </div>
+
+    <script type="text/template" id="pv-gallery-data">
+      {% for p in collections.projects %}
+        {% if p.data.images %}
+          {% for img in p.data.images %}{{ img }}|pv|{% endfor %}
+        {% endif %}
+      {% endfor %}
+    </script>
 
     {# Project / page preview state #}
     <div class="pv-middle-project" id="pv-project-view">

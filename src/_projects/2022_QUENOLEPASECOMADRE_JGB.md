@@ -7,7 +7,6 @@ description: "Short comic designed and illustrated as part of a health research 
 categories:
   - "Design"
   - "Freelance"
-  - "Comic"
 ---
 "Don't let it happen to you my friend" is a short comic part of the results of the research project "Characterization of the health state of affairs of Women in Buenaventura and Guapi" (Caracterización de la situación de Salud de las mujeres de Buenaventura y Guapi). With the support of the Ministry of Science and Technology and Executed by the "Observatorio para la Equidad de las Mujeres (OEM) between 2021 and 2022.
 

@@ -1,16 +1,12 @@
 ---
 layout: project.njk
 title: "Photography"
-year: 2019
+year: ""
 status: published
 description: "A personal photography archive focused on older women in my family and performative self-portrait work, developed over several years."
 categories:
   - "Personal"
-  - "Photography"
-  - "Design"
-  - "Art"
   - "Freelance"
-  - "Research"
 ---
 The first gallery is a personal project I've been slowly developing with years, focusing on my family. It primarily consists of older women in my family who never had children and had to work incredibly hard. Over the years, I have built a personal archive of these cherished family members, some of whom are no longer with us.
 
