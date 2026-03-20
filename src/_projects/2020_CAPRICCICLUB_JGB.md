@@ -20,3 +20,35 @@ Frida and Kahlo were inspired by diversity in all their presentations, it was ab
 *Early stages of the design, experimenting with the ingredients to make illustrations.*
 
 *Photo taken from Capricci Club Instagram page promoting their product.*
+
+![](/assets/images/projects/2020_CAPRICCI/Artboard 1.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Originales AI-01.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Originales AI-02.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Originales AI-03.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Trabajo Etiquetas CAPRICCI-02.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Trabajo Etiquetas CAPRICCI_Mesa de trabajo 1.png)
+
+![](/assets/images/projects/2020_CAPRICCI/ESTA.png)
+
+![](/assets/images/projects/2020_CAPRICCI/ESTA 2.png)
+
+![](/assets/images/projects/2020_CAPRICCI/ESTA 3.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Caja FINAL limited edition_Mesa de trabajo 1.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Caja FINAL limited edition_Lateral Derecho.png)
+
+![](/assets/images/projects/2020_CAPRICCI/4 (1).png)
+
+![](/assets/images/projects/2020_CAPRICCI/5 (1).png)
+
+![](/assets/images/projects/2020_CAPRICCI/Tarjetas de agradecimiento_3.png)
+
+![](/assets/images/projects/2020_CAPRICCI/Etiquetas PRUEBAS FINALES-06_edited.jpg)
+
+![](/assets/images/projects/2020_CAPRICCI/Logo Para Imprimir AI Final PNG-01.png)

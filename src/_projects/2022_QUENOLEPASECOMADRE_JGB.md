@@ -25,3 +25,37 @@ Video from the socialization in Buenaventura, taken and shared by the OEM, 2022.
 **Full OEM Report:** [https://de.scribd.com/document/562688379/OEM-Informe-Guapi-2021](https://de.scribd.com/document/562688379/OEM-Informe-Guapi-2021)
 
 **FULL CARTILLA:** [https://www.scribd.com/document/703424417/Cartilla-Que-no-le-pase-comadre](https://www.scribd.com/document/703424417/Cartilla-Que-no-le-pase-comadre)
+
+![](/assets/images/projects/2022_COMADRE/que no le pase comadre.webp)
+
+![](/assets/images/projects/2022_COMADRE/mitad.webp)
+
+![](/assets/images/projects/2022_COMADRE/Screenshot 2024-04-04 201808.webp)
+
+![](/assets/images/projects/2022_COMADRE/IMG-20221201-WA0026.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG-20221201-WA0027.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0006.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0007.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0010.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG_20230209_155554.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG_20230209_155722.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG_20230209_160055.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG_20230209_160122.jpg)
+
+![](/assets/images/projects/2022_COMADRE/IMG_20230209_160340.jpg)
+
+![](/assets/images/projects/2022_COMADRE/SMN_0893.JPG)
+
+![](/assets/images/projects/2022_COMADRE/SMN_0895_edited.jpg)
+
+![](/assets/images/projects/2022_COMADRE/SMN_0900.JPG)
+
+![](/assets/images/projects/2022_COMADRE/SMN_0902.JPG)

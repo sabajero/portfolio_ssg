@@ -40,6 +40,6 @@ Web Development: Jekyll - html - css - js -> Made with help from Antigravity (Ge
 
 <br><br><br>
 
-![poster52](/assets/images/projects/2026_HST_DM/poster_galeria.webp)
+![poster52](/assets/images/projects/2026_HST_DM/Poster_galeria.webp)
 
 

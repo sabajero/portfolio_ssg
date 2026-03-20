@@ -29,3 +29,37 @@ The following three images were created for 3 webinars held by researcher and pr
 
 ### (2020) Visual Thinking – Webinars Faculty of Economics and Accounting, Javeriana University
 Various visual thinkings and graphic material for the economics, accounting and marketing departments, made for the various webinars that the university hosted in 2020.
+
+![](/assets/images/projects/2020_VISUAL/ZACARIAS VISUAL THINKING FINAL.jpg)
+
+![](/assets/images/projects/2020_VISUAL/VISUAL-THINKING-6.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Economía-Feminista-Corrected.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Autoetnografía-11-de-Noviembre-Corregido.jpg)
+
+![](/assets/images/projects/2020_VISUAL/19-de-Noviembre,-Reactivacón-Económica.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Buenaventura.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Contabilidad-Ambiental.jpg)
+
+![](/assets/images/projects/2020_VISUAL/1-2021-Precios-de-Transferencia.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Manipulación-de-las-ganancias-desde-los-conceptos-de-Banalidad-del-Mal-y-mentira-organizada.jpg)
+
+![](/assets/images/projects/2020_VISUAL/POR-QUÉ-NO-NOS-CUIDAMOS-10.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Visual Thinking Digital 16 de Septiembre.png)
+
+![](/assets/images/projects/2020_VISUAL/Visual Thinking 18 de Septiembre.png)
+
+![](/assets/images/projects/2020_VISUAL/Mesa de trabajo 3.png)
+
+![](/assets/images/projects/2020_VISUAL/WEBINAR-8.jpg)
+
+![](/assets/images/projects/2020_VISUAL/WebinaR-AUTOETNOGRAFÍA.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Webinar-9.jpg)
+
+![](/assets/images/projects/2020_VISUAL/Webinar-Capitalismo.jpg)

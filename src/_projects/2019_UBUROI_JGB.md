@@ -17,3 +17,41 @@ During 2019, I had the opportunity to attend two full courses by prof. Romano Ba
 With this play, the group won first place at the national university theater encounter in Pasto, Colombia, in 2019. In 2020, due to the pandemic, I had to leave the city and consequently had to leave the group.
 
 *Collective work on masks and props at Carlos Rojas' apartment in the center of Cali. Pictured are Leonardo Llanos, Lua Arroyo, Laura Delgado, Didier, and Jerónimo Gutiérrez, 2019.*
+
+![](/assets/images/projects/2019_UBU/UBU_186.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_126.webp)
+
+![](/assets/images/projects/2019_UBU/DSC_1008.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_033.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_701.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_710.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_745.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_761.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_766.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_777.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_781.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_788.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_817.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_875.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_922.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_972.webp)
+
+![](/assets/images/projects/2019_UBU/UBU_973.webp)
+
+![](/assets/images/projects/2019_UBU/DSC_1009.webp)
+
+![](/assets/images/projects/2019_UBU/DSC_1033.webp)

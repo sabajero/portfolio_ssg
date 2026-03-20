@@ -41,3 +41,39 @@ Much of my art-research work was based on the log as a methodological and creati
 ## Conclusions
 
 Part of the reason I did a monograph is because in Colombian context it is still important to argue artworks in relation to its context, so with a serious and extensive literature review I demonstrate that firstly, that throughout history, art has been crucial in understanding the pandemics humanity has faced. Through art, images and metaphors of these diseases have been created, serving societies as tools to comprehend, combat, heal, mythologize, and imagine their effects, thus serving not only as historical documents but also as inputs for the collective imagination about diseases and their impacts on daily life. Secondly, the art of pandemics, as investigated, shows that art has been inseparable from social reality during times of pandemic, even in the Renaissance or with the onset of avant-gardes. Pandemic diseases are traumatic events for societies, and cultural productions such as art are not outside of this reality. Instead, we see how as art moves away from the mimetic paradigm and enters the 20th century, artistic responses to pandemics seem to lean towards representing the individual experience of the disease, especially as marginalized bodies become a territory of conflict in pandemics like HIV, and because pandemic visions begin to be shared thanks to the globalization of the world. Thirdly, the art of the Covid-19 pandemic is widely diverse, and in Latin America and particularly in Colombia, there are many works that speak from resistance to institutional policies related to inequality, gender, racism, and social unrest, as well as works that speak from personal experience and are of utmost importance for shaping present and future narratives about the Covid-19 pandemic. Both perspectives addressed in this work are fundamental for the development of a collective imagination of the pandemic at the regional level and demonstrate that visual arts are a necessary tool for reflecting on historical moments of crisis.
+
+![](/assets/images/projects/2022_PANDEMICA/Pandemica_slide.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/Pandemica_slide 2.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_0.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_1.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_2.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_3.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_4.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_5.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_6.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_7.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_8.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_9.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_10.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/galeria_11.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/GALERIA.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/show_1.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/show_2.webp)
+
+![](/assets/images/projects/2022_PANDEMICA/show_3.webp)

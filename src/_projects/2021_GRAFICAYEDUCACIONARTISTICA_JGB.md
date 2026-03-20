@@ -38,3 +38,35 @@ I also took charge of creating a visual thinking aid as educational and promotio
 **Links:**
 - [GICAEA Research Group](https://www.instagram.com/gica_ea/)
 - [Gráfica y Educación Artística - Kunstmatrix](https://artspaces.kunstmatrix.com/en/exhibition/1791720/gr%C3%A1fica-y-educaci%C3%B3n-art%C3%ADstica)
+
+![](/assets/images/projects/2021_GICAEA/Grabado Demonios.webp)
+
+![](/assets/images/projects/2021_GICAEA/Grabado Demonios_edited.webp)
+
+![](/assets/images/projects/2021_GICAEA/VISUAL-GRABADO.webp)
+
+![](/assets/images/projects/2021_GICAEA/Grabado.png)
+
+![](/assets/images/projects/2021_GICAEA/Prueba 1 Placa.webp)
+
+![](/assets/images/projects/2021_GICAEA/Prueba 1 Pruebas de Color.webp)
+
+![](/assets/images/projects/2021_GICAEA/DSC_0703.webp)
+
+![](/assets/images/projects/2021_GICAEA/DSC_0703_edited.webp)
+
+![](/assets/images/projects/2021_GICAEA/DSC_0705.webp)
+
+![](/assets/images/projects/2021_GICAEA/DSC_0706.webp)
+
+![](/assets/images/projects/2021_GICAEA/DSC_0709.webp)
+
+![](/assets/images/projects/2021_GICAEA/IMG_20200925_214626867.webp)
+
+![](/assets/images/projects/2021_GICAEA/IMG_20201118_145455793~2.webp)
+
+![](/assets/images/projects/2021_GICAEA/Kunstamatrix Screenshot.png)
+
+![](/assets/images/projects/2021_GICAEA/ilustraciones-24.png)
+
+![](/assets/images/projects/2021_GICAEA/fondo.webp)

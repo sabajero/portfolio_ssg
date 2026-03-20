@@ -20,3 +20,9 @@ This work corresponds to the graphic and didactic material of the project "Facto
 My role in this work was to offer freelance services to this project sponsored by the financing companies and foundations. My work with the Javeriana team (which consisted mostly of economics professionals) led by PhD Ana Milena Yoshioka, was to carry out illustrations to make a workbook on site with the AMUCC coffee-growing women, these illustrations were very specific and were focused on providing methodological help in the work of the workshop participants to explain and talk about indices of gender inequality that the women could experience of AMUCC in its context, my job was also to depict in the illustrations the relevant topics.
 
 *AMUCC women using the graphic material in the workshops carried out by the Javeriana Cali University team, screenshot of the video where the project is socialized hosted in a previously public available video called: WWB Colombia Foundation Fund for Research – YouTube, 2021.*
+
+![](/assets/images/projects/2021_AMUCC/ilustración final AGENCIAS-20.png)
+
+![](/assets/images/projects/2021_AMUCC/Screenshot 2024-04-18 164010.png)
+
+![](/assets/images/projects/2021_AMUCC/Screenshot 2024-04-18 165341.png)

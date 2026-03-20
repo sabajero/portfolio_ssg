@@ -61,3 +61,27 @@ The general objective of the project is to depict the experiences and imaginatio
 The route designed to achieve these objectives is divided into three stages: 1. Preparation and Call for Participation. 2. Conceptualization, design, and realization of the illustrations. 3. Online diffusion and awareness. It's essential to highlight that in the creation of the illustrations, project participants are active agents who influence the conceptualization and final outcome of the 10 watercolors, as their feelings and experiences will be reflected in them.
 
 In this sense, the project aligns with the concept of audience development, breaking mental barriers among participants and the audience, such as the notion of the solitary artist creator and the idea that art cannot be created collectively. The beneficiary population includes young men and women aged between 18 and 25, adults with latent demand according to manual classification, university students from all socioeconomic strata in the city of Cali and its surroundings. The final product expected is 10 illustrations that will be digitized for dissemination on social media and also in a virtual exhibition.
+
+![](/assets/images/projects/2020_CIELO/2 Editada Full.jpg)
+
+![](/assets/images/projects/2020_CIELO/3 Editada FULL.jpg)
+
+![](/assets/images/projects/2020_CIELO/4-FULL-BORDES-CORRE-web.jpg)
+
+![](/assets/images/projects/2020_CIELO/5-Full-Editada-MÁS-LUZ-ISNTA.jpg)
+
+![](/assets/images/projects/2020_CIELO/6-Full-editada2-INSTA.jpg)
+
+![](/assets/images/projects/2020_CIELO/7-Full-editada-INSTA.jpg)
+
+![](/assets/images/projects/2020_CIELO/8 Full editada.jpg)
+
+![](/assets/images/projects/2020_CIELO/DSC_0495.jpg)
+
+![](/assets/images/projects/2020_CIELO/DSC_0514.jpg)
+
+![](/assets/images/projects/2020_CIELO/Evidencia efect 1.png)
+
+![](/assets/images/projects/2020_CIELO/Evidencia 2 Efect.png)
+
+![](/assets/images/projects/2020_CIELO/Imagen b1.JPG)
