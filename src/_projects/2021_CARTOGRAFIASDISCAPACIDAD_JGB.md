@@ -3,7 +3,7 @@ layout: project.njk
 title: "Cartografías de la Discapacidad"
 year: 2021
 status: published
-description: "Three digital illustrations representing interdisciplinarity for the book 'CARTOGRAPHIES OF DISABILITY: A PLURIVERSE APPROACH', published by CLACSO."
+description: ""
 links:
   - label: "CLACSO Publication"
     url: "https://www.clacso.org/cartografias-de-la-discapacidad/"
@@ -11,8 +11,11 @@ categories:
   - "Design"
   - "Freelance"
 ---
+
+![cover](/assets/images/projects/2021_CARTOGRAFIAS/1.webp)
+
 These illustrations are part of the Papers from the book CARTOGRAPHIES OF DISABILITY: A PLURIVERSE APPROACH, by Lelia Schewe and Alexander Yarza de los Ríos (Coordinators). These 3 digital illustrations represent interdisciplinarity and were published by CLACSO.
 
 **[CLACSO Publication Page](https://www.clacso.org/cartografias-de-la-discapacidad/)**
 
-![](/assets/images/projects/2021_CARTOGRAFIAS/3 Construcción Puente.jpg)
+

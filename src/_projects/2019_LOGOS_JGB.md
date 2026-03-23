@@ -2,7 +2,7 @@
 layout: project.njk
 title: "Logos"
 year: ""
-status: published
+status: draft
 description: "Selected logos and branding work done for various organizations between 2019 and 2024, including MEF (Mesa Economía Feminista), ETCI, and Lyce.co."
 categories:
   - "Design"

@@ -147,6 +147,8 @@
     bindImageZoom(document.getElementById('pv-proj-body'));
     bindImageZoom(gallery);
 
+    if (typeof initCarousels === 'function') initCarousels();
+
     const randomView = document.getElementById('pv-random-view');
 
     defaultView.style.display = 'none';
@@ -233,6 +235,57 @@
     });
   }
 
+  // ── Inline Artbook Carousel Logic ─────────────────────────
+  function initCarousels() {
+    const carousels = document.querySelectorAll('.pv-artbook-carousel');
+    carousels.forEach(carousel => {
+      if (carousel.dataset.bound) return;
+      carousel.dataset.bound = "true";
+
+      const slides = Array.from(carousel.querySelectorAll('.pv-artbook-slide'));
+      const btnPrev = carousel.querySelector('.pv-gallery-ctrl.prev');
+      const btnNext = carousel.querySelector('.pv-gallery-ctrl.next');
+      if (!slides.length) return;
+      
+      let currentIndex = 0;
+      let hasActive = false;
+      slides.forEach((slide, idx) => {
+         if (slide.classList.contains('is-active')) {
+            currentIndex = idx;
+            hasActive = true;
+         }
+      });
+      // Safety fallback: if no slide was marked active in HTML, force the first one to be active!
+      if (!hasActive && slides.length > 0) {
+         slides[0].classList.add('is-active');
+      }
+
+      function showSlide(index) {
+        slides.forEach(s => s.classList.remove('is-active'));
+        slides[index].classList.add('is-active');
+      }
+
+      if (btnPrev) {
+        btnPrev.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+          showSlide(currentIndex);
+        });
+      }
+      
+      if (btnNext) {
+        btnNext.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+          showSlide(currentIndex);
+        });
+      }
+    });
+  }
+
+
   // Bind zoom to the default portrait initially
   if (defaultView) {
     bindImageZoom(defaultView);
@@ -273,7 +326,8 @@
   // Clear lock on outside click
   document.addEventListener('click', (e) => {
     if (window.innerWidth <= 900) return;
-    if (lockedSlug && leftPanel && !leftPanel.contains(e.target)) {
+    const projView = document.getElementById('pv-project-view');
+    if (lockedSlug && leftPanel && !leftPanel.contains(e.target) && projView && !projView.contains(e.target)) {
        lockedSlug = null;
        document.querySelectorAll('.pv-project-item').forEach(el => el.classList.remove('is-locked'));
        clearActive();

@@ -1,22 +1,22 @@
 ---
 layout: page.njk
-title: "CV 2025"
+title: ""
 bodyClass: page-cv
 description: "Curriculum Vitae of Jerónimo Gutiérrez Balanta"
 ---
 
 ## Education
 
-* <span class="project__meta" style="font-style: italic;">2024 - 2026 (On Going)</span> — **Master Digital Media**, Hochschule für Künste Bremen.
+* <span class="project__meta" style="font-style: italic; color: #8153ff;">2024 - 2026 (On Going)</span> — **Master Digital Media**, Hochschule für Künste Bremen.
 * <span class="project__meta" style="font-style: italic;">2016 - 2022</span> — **Bachelor of Visual Arts**, Universidad del Valle, Cali, Colombia. Meritorious Thesis Work - Average: 4.5.
 * <span class="project__meta" style="font-style: italic;">2014 - 2016</span> — **Technical School Certificate**, SENA / Comfandi El Prado: Maintenance of consumer audio and video equipment.
 
 
-* <span class="project__meta" style="font-style: italic;">2024 - 2026</span> — **DAAD Full Master Scholarship**, Postgraduate Studies in the Fields of Fine Art, Design, Visual Communication and Film.
 
-## Certificates
 
-* <span class="project__meta" style="font-style: italic;">2023</span> — **Google UX Design Specialization**, Coursera Certificate.
+## Grant
+
+*  <span class="project__meta" style="font-style: italic;">2024 - 2026</span> — **DAAD Full Master Scholarship**, Postgraduate Studies in the Fields of Fine Art, Design, Visual Communication and Film.
 
 
 

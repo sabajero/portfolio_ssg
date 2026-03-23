@@ -46,7 +46,7 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 <script type="application/json" id="pv-page-data">
 {
   "cv": {
-    "title": "Curriculum Vitae",
+    "title": "",
     "content": {{ cvPage.templateContent | default('<p>Content coming soon</p>') | dump | safe }}
   },
   "diary": {
@@ -58,7 +58,7 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
     "content": {{ aboutPage.templateContent | default('<p>Content coming soon</p>') | dump | safe }}
   },
   "contact": {
-    "title": "Contact",
+    "title": "; )",
     "content": {{ contactPage.templateContent | default('<p>Content coming soon</p>') | dump | safe }}
   },
   "mentions": {
@@ -76,7 +76,7 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 
     {# Intro block — sticky ─ #}
     <div class="pv-intro" id="pv-intro">
-      
+
       <div class="pv-intro-inner">
         <div class="pv-intro-text">
           {# Name — mixed case, no caps #}
@@ -85,7 +85,7 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
           {# Location #}
           <p class="pv-location">Cali (CO) ↔ Bremen (DE)</p>
         </div>
-        
+
         <button class="pv-burger" id="pv-burger" aria-label="Toggle menu" aria-expanded="false">
           <span></span>
           <span></span>
@@ -155,8 +155,10 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
     </div>
 
     {# Random works hover state #}
-    <div class="pv-middle-random" id="pv-random-view" style="display: none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 3rem 2.5rem; transition: opacity 300ms ease;">
-      <img src="" id="pv-random-img" alt="Random work" style="max-width: 100%; max-height: 65vh; height: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px;" />
+    <div class="pv-middle-random" id="pv-random-view"
+      style="display: none; flex-direction: column; align-items: center; justify-content: center; height: 100%; padding: 3rem 2.5rem; transition: opacity 300ms ease;">
+      <img src="" id="pv-random-img" alt="Random work"
+        style="max-width: 100%; max-height: 65vh; height: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 4px;" />
     </div>
 
     <script type="text/template" id="pv-gallery-data">

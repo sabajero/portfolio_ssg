@@ -5,20 +5,10 @@ bodyClass: page-about
 description: "About Jerónimo Gutiérrez Balanta"
 ---
 
-1. Muchas veces me pregunto qué debe uno escribir en esta sección, about what?
+Hey there!
 
-2. No queda más que presentarme, entre tragedias y alegrías.
+(1999) I'm an artist and graphic designer from Cali Colombia, currently doing my Master in the Digital Media program in HfK Bremen, Germany. My artistic interests are around: using art as a research tool to talk about emerging and contemporary issues, labor and post-capitalism speculation, the body as a political ground in violent contexts like the Colombian armed conflict and also the dissapearance and relationship with death.
 
-3. Todo mi tiempo de gestación lo pasé entre Miranda (Cauca) y Buga (Valle) pero a ultimo minuto nací por cuestiones de logística nací en Cali, Colombia. Nací unas semanas después del asesinato de mi abuelo paterno Hugo. 
+Alongside my artistic practice, I have over four years of experience as a graphic designer, creating visual identities, illustrations, and products for a wide range of clients—from private individuals to institutions. I specialize in identity design, visual assets, and critical approaches to commercial design, as well as consulting and web design.
 
-4. A mis cuatro años nació mi hermana Verónica y yo la espere hasta que llegara del hospital en la noche.
-
-5. A los cinco años mi familia se mudó a Santiago de Cali y después de veintiún años sigo firme con que es un terrible lugar para vivir.
-
-6. Mi primer colegio fue el San Francisco de Asís en el barrio Ciudad Jardín de Cali, aún quedaban vestigios del periodo narco de los 90's y recuerdo algunos compañeros tenían padres y conocidos que morían.
-
-7. Tuve por muchos años clases de música en Tra la lá, aprendí a tocar piano y a cantar.
-
-8. A los ocho años conocí el mar en San Andrés.
-
-
+I’m always open to new collaborations. If you have a project in mind, feel free to reach out!

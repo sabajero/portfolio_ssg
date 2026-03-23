@@ -1,15 +1,13 @@
 ---
 layout: page.njk
-title: "Contact"
+title: ": )"
 bodyClass: page-contact
 description: "Contact information for Jerónimo Gutiérrez Balanta"
 ---
 
-## Let's Connect
-
 Feel free to reach out for collaborations, questions, or just to say hello.
 
-* **Email**: [sabajerolabs@gmail.com](mailto:sabajerolabs@gmail.com)
+* **Email**: [jeguba1999@gmail.com](mailto:jeguba1999@gmail.com)
 * **Instagram**: [@sabajero](https://instagram.com/sabajero)
 * **LinkedIn**: [Jerónimo Gutiérrez Balanta](https://www.linkedin.com/in/jeronimogutierrezbalanta/)
-* **Phone / WhatsApp**: +49 123 456 7890 (Please update with actual number)
+* **Phone / Telegram**: +49 163 081 9959

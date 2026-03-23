@@ -15,6 +15,10 @@ Between 2020 and 2021, when I was in the last semesters of my undergraduate degr
 
 These projects eventually led me to carry out Visual Thinkings for organizations such as the OEM (observatory for women's equality, Icesi University), Oxfam Intermón, Universidad del Valle, CVC (The Regional Autonomous Corporation of Valle del Cauca or CVC) and some private companies that sought to archive their talks, processes or webinars in a fun way.
 
+Published book with the Javeriana University with all Visual Thinking: [Las ciencias económicas toman la palabra: diálogos en un mundo cambiante 2020](https://books.scielo.org/id/vdsc3/pdf/castillo-9786287709034.pdf)
+
+
+
 ---
 
 ## Projects
