@@ -38,7 +38,26 @@
   let projects = [];
   let pages = {};
 
-  try { projects = JSON.parse(projectDataEl.textContent); }
+  try { 
+    projects = JSON.parse(projectDataEl.textContent); 
+    
+    // Pre-extract all images gracefully upon initialization
+    projects.forEach(p => {
+      let imgs = [];
+      if (p.images && p.images.length > 0) {
+        imgs = [...p.images];
+      }
+      if (p.content) {
+         const htmlRegex = /<img[^>]+src=["']([^"']+)["']/gi;
+         let htmlMatch;
+         while ((htmlMatch = htmlRegex.exec(p.content)) !== null) {
+            let url = htmlMatch[1];
+            if (url && !url.includes('soundcloud')) imgs.push(url.trim());
+         }
+      }
+      p.extractedImages = [...new Set(imgs)];
+    });
+  }
   catch (e) { console.error('[portfolio.js] Failed to parse project data:', e.message); }
 
   try { pages = JSON.parse(pageDataEl.textContent); }
@@ -235,21 +254,70 @@
     });
   }
 
+  // ── Global locked state ──────────────────────────────────
+  let lockedSlug = null;
+
+  const leftPanel = document.getElementById('pv-left');
+  if (leftPanel) {
+    leftPanel.addEventListener('mouseleave', () => {
+      if (window.innerWidth <= 900) return;
+      if (lockedSlug) {
+        const lockedItem = document.querySelector(`.pv-project-item[data-slug="${lockedSlug}"]`);
+        if (lockedItem && activeSlug !== lockedSlug) {
+           lockedItem.dispatchEvent(new MouseEvent('mouseenter'));
+        }
+      }
+    });
+  }
+
+  // Clear lock on outside click
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 900) return;
+    if (lockedSlug && leftPanel && !leftPanel.contains(e.target)) {
+       lockedSlug = null;
+       document.querySelectorAll('.pv-project-item').forEach(el => el.classList.remove('is-locked'));
+       clearActive();
+       showDefault();
+    }
+  });
+
   // ── Works title hover → show random project image ─────────
+  let randomImagePool = [];
+
+  function repopulateImagePool() {
+    randomImagePool = [];
+    projects.forEach(p => {
+       if (p.extractedImages && p.extractedImages.length > 0) {
+         const randImg = p.extractedImages[Math.floor(Math.random() * p.extractedImages.length)];
+         randomImagePool.push(randImg);
+       }
+    });
+    // Fisher-Yates shuffle
+    for (let i = randomImagePool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [randomImagePool[i], randomImagePool[j]] = [randomImagePool[j], randomImagePool[i]];
+    }
+  }
+
   if (worksToggle) {
     worksToggle.addEventListener('mouseenter', () => {
       clearActive();
       const randomView = document.getElementById('pv-random-view');
       const randomImg = document.getElementById('pv-random-img');
-      if (randomView && randomImg && window.pvGalleryImages && window.pvGalleryImages.length > 0) {
-        projectView.classList.remove('is-visible');
-        projectView.style.display = 'none';
-        defaultView.style.display = 'none';
+      
+      if (randomView && randomImg && projects.length > 0) {
+        if (randomImagePool.length === 0) {
+          repopulateImagePool();
+        }
         
-        const randIndex = Math.floor(Math.random() * window.pvGalleryImages.length);
-        randomImg.src = window.pvGalleryImages[randIndex];
-        
-        randomView.style.display = 'flex';
+        if (randomImagePool.length > 0) {
+          projectView.classList.remove('is-visible');
+          projectView.style.display = 'none';
+          defaultView.style.display = 'none';
+          
+          randomImg.src = randomImagePool.pop();
+          randomView.style.display = 'flex';
+        }
       }
     });
   }
@@ -257,6 +325,21 @@
   // ── Project item hovers ──────────────────────────────────
   document.querySelectorAll('.pv-project-item').forEach(item => {
     const slug = item.dataset.slug;
+
+    item.addEventListener('click', () => {
+      if (window.innerWidth <= 900) return; // Desktop only logic
+      if (lockedSlug === slug) {
+         lockedSlug = null;
+         item.classList.remove('is-locked');
+      } else {
+         document.querySelectorAll('.pv-project-item').forEach(el => el.classList.remove('is-locked'));
+         lockedSlug = slug;
+         item.classList.add('is-locked');
+         if (activeSlug !== slug) {
+            item.dispatchEvent(new MouseEvent('mouseenter'));
+         }
+      }
+    });
 
     item.addEventListener('mouseenter', () => {
       if (activeSlug === slug) return;

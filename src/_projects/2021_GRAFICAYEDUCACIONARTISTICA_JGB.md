@@ -15,6 +15,7 @@ categories:
   - "Internship"
   
 ---
+![Cover](/assets/images/projects/2021_GICAEA/cover.webp)
 "Graphic arts and art education" was the project where I had an internship as part of my undergraduate requirements in 2021. It was a remote internship (Due to Covid regulations in Colombia) with the research group "GICAEA" on the project ARTGRALAB (Art-Engraving-Lab) at Valle University, focusing on education and artistic creation with a focus both on experimental and classic engraving techniques.
 
 Alongside three other interns, my role primarily involved crafting a series of animations and prints that reinterpreted three performances by the professor and artist Alvaro Ricardo Herrera. The research delved into transmediality and how we can "revive" (in some way) and give new meanings to digitally hosted performances in practical reality. My task in this project was to reinterpret a performance by Alvaro Herrera, which involved carrying a thermos of water from one sea to another in Panama (given Panama's narrow width and access to two oceans). The result of this experimental exercise was a frame-by-frame animation created in drypoint.

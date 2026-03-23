@@ -8,6 +8,9 @@ categories:
   - "Design"
   - "Freelance"
 ---
+
+![cover](/assets/images/projects/2020_VISUAL/cover.webp)
+
 Between 2020 and 2021, when I was in the last semesters of my undergraduate degree at the university, the Faculty of Economics at the Javeriana University was looking for an artist or designer who could do live "visual thinking" in webinars and talks that were going to be carried out as a strategy to promote economic issues in the pandemic. I accepted the challenge and ended up working with the faculties of accounting, marketing and economics. I was working at this institution in a contract to provide services for a little over a year, where I accompanied different events, talks and designed visual pieces for podcasts, academic publications, social networks, etc.
 
 These projects eventually led me to carry out Visual Thinkings for organizations such as the OEM (observatory for women's equality, Icesi University), Oxfam Intermón, Universidad del Valle, CVC (The Regional Autonomous Corporation of Valle del Cauca or CVC) and some private companies that sought to archive their talks, processes or webinars in a fun way.
@@ -18,48 +21,29 @@ These projects eventually led me to carry out Visual Thinkings for organizations
 
 ### (2022) OEM – Oxfam Colombia
 Visual Thinking (Visual Reporting) live for the women's meetings of the project funded by Adelante2 and also the panels of the Feminist Economy Roundtable.
+
+![OEM](/assets/images/projects/2020_VISUAL/OEM.webp)
+![oem2](/assets/images/projects/2020_VISUAL/oem2.webp)
 *Santiago de Cali, September 14, 16 and 18, 2022, Hotel Dan Carlton, Cali.*
 
 ### (2022) CVC – Univalle
 Visual Reporting for the ENVIRONMENTAL LIABILITIES project of the CVC and the Universidad del Valle, 2022.
 Work that consisted of Visual Reporting or Visual Thinking of 2 workshops from the Environmental Passives project in the communities of Triana and Zacarías, in the Colombian Pacific, organized and financed by the CVC and the Universidad del Valle Cali. This was a curious experience to say at least since these locations are very delicate and abandoned by the state, so I worked as a sort of mediator between the researchers and guides from the project and the community in Triana and Zacarias, trying to convey their desires and concerns on these visual thinking than then converted into a banner so they could use in their own community.
+![zaca](/assets/images/projects/2020_VISUAL/zaca1.webp)
+![zaca](/assets/images/projects/2020_VISUAL/zaca2.webp)
+![zaca](/assets/images/projects/2020_VISUAL/zaca3.webp)
 
 ### (2021) Universidad del Valle – Webinars about ethnography
 The following three images were created for 3 webinars held by researcher and professor Mauricio Lovera, which was invited by his own faculty to hold webinars about his doctoral thesis work on auto ethnographic methodologies in healthcare.
 
+![Univalle](/assets/images/projects/2020_VISUAL/1.webp)
+![Univalle](/assets/images/projects/2020_VISUAL/2.webp)
+
+
 ### (2020) Visual Thinking – Webinars Faculty of Economics and Accounting, Javeriana University
 Various visual thinkings and graphic material for the economics, accounting and marketing departments, made for the various webinars that the university hosted in 2020.
 
-![](/assets/images/projects/2020_VISUAL/ZACARIAS VISUAL THINKING FINAL.jpg)
 
-![](/assets/images/projects/2020_VISUAL/VISUAL-THINKING-6.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Economía-Feminista-Corrected.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Autoetnografía-11-de-Noviembre-Corregido.jpg)
-
-![](/assets/images/projects/2020_VISUAL/19-de-Noviembre,-Reactivacón-Económica.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Buenaventura.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Contabilidad-Ambiental.jpg)
-
-![](/assets/images/projects/2020_VISUAL/1-2021-Precios-de-Transferencia.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Manipulación-de-las-ganancias-desde-los-conceptos-de-Banalidad-del-Mal-y-mentira-organizada.jpg)
-
-![](/assets/images/projects/2020_VISUAL/POR-QUÉ-NO-NOS-CUIDAMOS-10.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Visual Thinking Digital 16 de Septiembre.png)
-
-![](/assets/images/projects/2020_VISUAL/Visual Thinking 18 de Septiembre.png)
-
-![](/assets/images/projects/2020_VISUAL/Mesa de trabajo 3.png)
-
-![](/assets/images/projects/2020_VISUAL/WEBINAR-8.jpg)
-
-![](/assets/images/projects/2020_VISUAL/WebinaR-AUTOETNOGRAFÍA.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Webinar-9.jpg)
-
-![](/assets/images/projects/2020_VISUAL/Webinar-Capitalismo.jpg)
+![jave](/assets/images/projects/2020_VISUAL/comercio.webp)
+![jave](/assets/images/projects/2020_VISUAL/economia4.webp)
+![jave](/assets/images/projects/2020_VISUAL/economia5.webp)

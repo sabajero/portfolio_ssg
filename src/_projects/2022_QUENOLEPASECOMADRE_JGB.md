@@ -8,9 +8,17 @@ categories:
   - "Design"
   - "Freelance"
 ---
+![cover](/assets/images/projects/2022_COMADRE/cover.webp)
+
 "Don't let it happen to you my friend" is a short comic part of the results of the research project "Characterization of the health state of affairs of Women in Buenaventura and Guapi" (Caracterización de la situación de Salud de las mujeres de Buenaventura y Guapi). With the support of the Ministry of Science and Technology and Executed by the "Observatorio para la Equidad de las Mujeres (OEM) between 2021 and 2022.
 
 I was invited to conceptualize, design and illustrate this comic working hand to hand with the main researchers and women from the community, the comic tells the story of a vulnerable black woman in Buenaventura who is soon to give birth but is treated violently by the hospital just because the established stereotypes about black people, this of course based on experiences from the women. The comic was used as part of the socialization strategy to fight obstetric violence in Buenaventura and other towns in 2022.
+
+![comic](/assets/images/projects/2022_COMADRE/comic1.webp)
+![comic](/assets/images/projects/2022_COMADRE/comic2.webp)
+![comic](/assets/images/projects/2022_COMADRE/comic3.webp)
+![comic](/assets/images/projects/2022_COMADRE/comic4.webp)
+![comic](/assets/images/projects/2022_COMADRE/comic5.webp)
 
 ---
 
@@ -26,36 +34,9 @@ Video from the socialization in Buenaventura, taken and shared by the OEM, 2022.
 
 **FULL CARTILLA:** [https://www.scribd.com/document/703424417/Cartilla-Que-no-le-pase-comadre](https://www.scribd.com/document/703424417/Cartilla-Que-no-le-pase-comadre)
 
-![](/assets/images/projects/2022_COMADRE/que no le pase comadre.webp)
+![group](/assets/images/projects/2022_COMADRE/grupo1.webp)
+![group](/assets/images/projects/2022_COMADRE/grupo2.webp)
+![group](/assets/images/projects/2022_COMADRE/grupo3.webp)
+![group](/assets/images/projects/2022_COMADRE/grupo4.webp)
+![group](/assets/images/projects/2022_COMADRE/grupo5.webp)
 
-![](/assets/images/projects/2022_COMADRE/mitad.webp)
-
-![](/assets/images/projects/2022_COMADRE/Screenshot 2024-04-04 201808.webp)
-
-![](/assets/images/projects/2022_COMADRE/IMG-20221201-WA0026.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG-20221201-WA0027.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0006.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0007.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG-20221205-WA0010.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG_20230209_155554.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG_20230209_155722.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG_20230209_160055.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG_20230209_160122.jpg)
-
-![](/assets/images/projects/2022_COMADRE/IMG_20230209_160340.jpg)
-
-![](/assets/images/projects/2022_COMADRE/SMN_0893.JPG)
-
-![](/assets/images/projects/2022_COMADRE/SMN_0895_edited.jpg)
-
-![](/assets/images/projects/2022_COMADRE/SMN_0900.JPG)
-
-![](/assets/images/projects/2022_COMADRE/SMN_0902.JPG)

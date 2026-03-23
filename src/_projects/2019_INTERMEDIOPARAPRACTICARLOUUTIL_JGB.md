@@ -10,22 +10,17 @@ links:
 categories:
   - "Art"
 images:
-  - "/assets/images/projects/2019_PERFORMANCE/& imagenes.png"
-  - "/assets/images/projects/2019_PERFORMANCE/1_Performance.png"
-  - "/assets/images/projects/2019_PERFORMANCE/Captura de pantalla 2022-05-30 194716.png"
-  - "/assets/images/projects/2019_PERFORMANCE/Captura de pantalla 2022-05-30 200007.png"
-  - "/assets/images/projects/2019_PERFORMANCE/FIAC 2.png"
-  - "/assets/images/projects/2019_PERFORMANCE/FIAC.jpg"
-  - "/assets/images/projects/2019_PERFORMANCE/IMG_20190920_162240417.jpg"
-  - "/assets/images/projects/2019_PERFORMANCE/IMG_20190920_173437716_HDR~2.jpg"
-  - "/assets/images/projects/2019_PERFORMANCE/Perfomance 1.jpg"
-  - "/assets/images/projects/2019_PERFORMANCE/WhatsApp Image 2019-10-28 at 10.15.14 PM.jpeg"
-  - "/assets/images/projects/2019_PERFORMANCE/WhatsApp Image 2019-10-28 at 10.15.19 PM.jpeg"
+
 ---
+
+![cover](/assets/images/projects/2019_PERFORMANCE/galeria.webp)
+*Stills from the FIAC Performance, 2019.*
+
+</b>
+
 Byung Chul Han in his book "Saving Beauty" says something very interesting referring to our social imperative:
 
 > "Polished and impeccable things do no harm. It also offers no resistance. The polished object nullifies what it has of something placed in front of it. All negativity is eliminated."
-
 Although he is referring to touch screens and crystal buildings we can translate this vision of society to the relations within the city. Thus the silence becomes more forceful than the loudest cry for help, walking slowly while playing the Shakuhachi flute as a form of meditation, dressed in a neutral way, bursts with everyday life and with the apparent function of the street, how it should be used and what things it is used for.
 
 This performative action that was carried out within the framework of the Manizales International Festival of Contemporary Art 2019 (FIAC) on Friday September 20th 2019, organized by the University of Caldas. The action consisted of walking very slowly for an hour along one of the busiest streets in the city, while the Japanese Shakuhachi flute was played. It is an action that was opposed to the dynamics of the city and the conception of how the street should be used. The action initially arose from the exercises of the performance seminar offered by the professor and artist Mario Ortiz Ossa and also by my interest on building, playing and sharing Shakuhachi on my educational project "Aleteo Shakuhachi".
@@ -36,8 +31,14 @@ This performative action that was carried out within the framework of the Maniza
 
 **Action. Duration: 3–5 hours**
 
-On Santander Avenue or the "Parallel avenue" in Manizales, which are neuralgic, main and busy streets, I will choose the starting point of one of these streets, that will be the starting place and the place where the street ends or dissipates, the arrival point. Before the action I am going to prepare myself physically, it must be mentioned that I am an athlete who competes occasionally and I am in good physical condition to carry out the action. Before the action I will be well eaten and hydrated as well as have the route studied.
+![mapa](/assets/images/projects/2019_PERFORMANCE/mapa.webp)
+*Map of the performance route, 2019.*
+
+On Santander Avenue or the "Avenida Paralela" in Manizales, which are neuralgic, main and busy streets, I will choose the starting point of one of these streets, that will be the starting place and the place where the street ends or dissipates, the arrival point. Before the action I am going to prepare myself physically, it must be mentioned that I am an athlete who competes occasionally and I am in good physical condition to carry out the action. Before the action I will be well eaten and hydrated as well as have the route studied.
 
 After having chosen the departure and arrival point and knowing my route well, at around 3 in the afternoon I will go by public transport from the place where I will be staying to the starting point. I will be dressed in a completely black shirt, black pants and sandals, I will only have my shakuhachi flute on hand and my identification documents in my pocket. When I am at the starting point I will begin to play the flute and walk very slowly, I will only walk while I am producing sound with the Shakuhachi, not otherwise, if I stop I will do so to take a breath and continue walking, I will not talk to anyone unless is really necessary. This action will continue for the necessary time until I reach the arrival point, where I will stop playing and the action will end, which in distance to Santander Avenue would be 6.83 km.
 
 *October, 2019*
+
+![afiches](/assets/images/projects/2019_PERFORMANCE/afiche2.webp)
+  *Festival Program with this performance from 3 to 4 pm*

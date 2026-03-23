@@ -11,44 +11,28 @@ categories:
   - "Design"
   - "Freelance"
 ---
+
+![cover](/assets/images/projects/2020_CAPRICCI/cover.webp)
+
 Capricci Club is a known feminist brand from Cali focused on the care and promotion of Hair care. At the end of 2019 we met because the creators wanted to launch the brand and bring their own hair product to the market, so they trusted me to make their logos, illustrations, graphic design and product design for the lines "Candela y Quimera" and "Fridha y Kahlo".
+
+## Candela y Quimera
+
+![Candela y Quimera](/assets/images/projects/2020_CAPRICCI/1.webp)
+![Candela y Quimera](/assets/images/projects/2020_CAPRICCI/2.webp)
+![Candela y Quimera](/assets/images/projects/2020_CAPRICCI/3.webp)
+
 
 ---
 
+## Frida y Kahlo
+
+![cover](/assets/images/projects/2020_CAPRICCI/fcover.webp)
+
+
 Frida and Kahlo were inspired by diversity in all their presentations, it was about making simple illustrations of women that represented Colombian diversity, gender and also disability. This design was used as the product packaging of two shampoos and conditioners of the same name, one for curly and the other one for straight hair.
 
-*Early stages of the design, experimenting with the ingredients to make illustrations.*
 
-*Photo taken from Capricci Club Instagram page promoting their product.*
 
-![](/assets/images/projects/2020_CAPRICCI/Artboard 1.png)
+![cover](/assets/images/projects/2020_CAPRICCI/f0.webp)
 
-![](/assets/images/projects/2020_CAPRICCI/Originales AI-01.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Originales AI-02.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Originales AI-03.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Trabajo Etiquetas CAPRICCI-02.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Trabajo Etiquetas CAPRICCI_Mesa de trabajo 1.png)
-
-![](/assets/images/projects/2020_CAPRICCI/ESTA.png)
-
-![](/assets/images/projects/2020_CAPRICCI/ESTA 2.png)
-
-![](/assets/images/projects/2020_CAPRICCI/ESTA 3.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Caja FINAL limited edition_Mesa de trabajo 1.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Caja FINAL limited edition_Lateral Derecho.png)
-
-![](/assets/images/projects/2020_CAPRICCI/4 (1).png)
-
-![](/assets/images/projects/2020_CAPRICCI/5 (1).png)
-
-![](/assets/images/projects/2020_CAPRICCI/Tarjetas de agradecimiento_3.png)
-
-![](/assets/images/projects/2020_CAPRICCI/Etiquetas PRUEBAS FINALES-06_edited.jpg)
-
-![](/assets/images/projects/2020_CAPRICCI/Logo Para Imprimir AI Final PNG-01.png)

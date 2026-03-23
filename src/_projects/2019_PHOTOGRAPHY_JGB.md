@@ -2,7 +2,7 @@
 layout: project.njk
 title: "Photography"
 year: ""
-status: published
+status: draft
 description: "A personal photography archive focused on older women in my family and performative self-portrait work, developed over several years."
 categories:
   - "Personal"

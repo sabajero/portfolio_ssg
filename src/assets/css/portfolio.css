@@ -454,6 +454,16 @@ body.portfolio-view .site-nav {
   color: #555;
 }
 
+.pv-proj-body h1 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 230;
+  letter-spacing: -0.02em;
+  line-height: 1.0;
+  color: var(--pv-text);
+  margin: 2rem 0 1rem;
+}
+
 .pv-proj-body h2,
 .pv-proj-body h3 {
   font-size: 0.85rem;
@@ -668,6 +678,25 @@ body.portfolio-view .site-nav {
   display: none;
 }
 
+/* ── HIDDEN SECTIONS (Mentions, Diary) ────────────────────── */
+#pv-sec-mentions,
+#pv-sec-diary {
+  display: none !important;
+}
+
+/* ── LOCKED PROJECT STATE ────────────────────────────────── */
+.pv-project-item.is-locked .pv-project-title::after {
+  content: '●';
+  color: var(--pv-accent);
+  font-size: 8px;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.pv-project-item {
+  position: relative; 
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   body.portfolio-view {
@@ -747,6 +776,13 @@ body.portfolio-view .site-nav {
     width: 100%;
     padding-top: 5rem; /* Ensure content is below header */
     border-right: none;
+  }
+
+  /* Shrink Project Titles */
+  .pv-proj-title,
+  .pv-proj-body h1 {
+    font-size: 2.3rem; 
+    line-height: 1.1;
   }
 
   /* Don't shrink the default state view awkwardly */
