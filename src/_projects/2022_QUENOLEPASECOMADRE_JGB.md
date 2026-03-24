@@ -14,11 +14,11 @@ categories:
 
 I was invited to conceptualize, design and illustrate this comic working hand to hand with the main researchers and women from the community, the comic tells the story of a vulnerable black woman in Buenaventura who is soon to give birth but is treated violently by the hospital just because the established stereotypes about black people, this of course based on experiences from the women. The comic was used as part of the socialization strategy to fight obstetric violence in Buenaventura and other towns in 2022.
 
-![comic](/assets/images/projects/2022_COMADRE/comic1.webp)
-![comic](/assets/images/projects/2022_COMADRE/comic2.webp)
-![comic](/assets/images/projects/2022_COMADRE/comic3.webp)
-![comic](/assets/images/projects/2022_COMADRE/comic4.webp)
-![comic](/assets/images/projects/2022_COMADRE/comic5.webp)
+![comic](/assets/images/projects/2022_COMADRE/COMIC1.webp)
+![comic](/assets/images/projects/2022_COMADRE/COMIC2.webp)
+![comic](/assets/images/projects/2022_COMADRE/COMIC3.webp)
+![comic](/assets/images/projects/2022_COMADRE/COMIC4.webp)
+![comic](/assets/images/projects/2022_COMADRE/COMIC5.webp)
 
 ---
 
