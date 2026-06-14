@@ -18,7 +18,7 @@ categories:
 
 ![Oscillations Program](/assets/images/projects/2026_OSCILLATIONS/program1.webp)
 
-<video controls autoplay loop muted playsinline width="100%">
+<video autoplay loop muted playsinline width="100%">
   <source src="/assets/images/projects/2026_OSCILLATIONS/OSC_video.mov">
 </video>
 
