@@ -7,31 +7,24 @@ description: "Visual identity and design system for the 2026 Digital Media Gradu
 categories:
   - "Design"
   - "Freelance"
-images:
-  - "/assets/images/projects/2026_OSCILLATIONS/OSC1.webp"
-  - "/assets/images/projects/2026_OSCILLATIONS/OSC2.webp"
 ---
 
 ![Oscillations Visual Identity Poster](/assets/images/projects/2026_OSCILLATIONS/OSC1.webp)
 
-## Design Concept & Process
 
-The visual identity for **Oscillations~**, the 2026 Digital Media Graduation Festival at HfK Bremen, is centered around a generative, wave-like pattern inspired by water undulations and acoustic ripples. *(Official event info and details are available on the [HfK Bremen Website](https://www.hfk-bremen.de/de/veranstaltungen/oscillations-digital-media-graduation-festival/17174)).* The design system directly embraces physical and material constraints by being designed entirely for **Risograph printing**. 
+![Oscillations Door](/assets/images/projects/2026_OSCILLATIONS/door.webp)
 
-Working closely with our local HfK Riso workshop, the visual language was restricted to a high-contrast, tactile dual-tone palette (using fluorescent inks) and organic paper stocks. The microscopic registration shifts, natural soy-ink smudging, and halftone textures of the Risograph machine are not treated as errors, but as active design components that mirror the "oscillating" nature of digital media transitioning into physical spaces.
+![Oscillations Event](/assets/images/projects/2026_OSCILLATIONS/event.webp.jpg)
 
-![Oscillations Printed Collateral](/assets/images/projects/2026_OSCILLATIONS/OSC2.webp)
+![Oscillations Program](/assets/images/projects/2026_OSCILLATIONS/program1.webp)
 
----
-
-
----
-
-
-
-<br><br>
+<video controls autoplay loop muted playsinline width="100%">
+  <source src="/assets/images/projects/2026_OSCILLATIONS/OSC_video.mov">
+</video>
 
 ---
-*Visual Identity Design: Jerónimo Gutiérrez Balanta*  
-*Printing: HfK Bremen Riso Workshop, Germany*  
-*Year: 2026*
+
+Organization: Alevtina Senik, Katja Striedelmeyer, Prof. Andrea Sick, Prof. Dennis Paul  
+Visual Identity and Graphic Design: Jerónimo Gutiérrez Balanta  
+Motion Design & Social Media: Alethia Pinzón-Rodriguez  
+Special thanks to Indrayudh Sengupta, Vannesa Ehmann, Omar, Valentina

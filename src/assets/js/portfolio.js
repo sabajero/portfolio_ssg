@@ -503,65 +503,6 @@
     });
   }
 
-  const mobileSlider = document.getElementById('pv-mobile-slider');
-  const mobileDotsContainer = document.getElementById('pv-mobile-slider-dots');
-  const mobileActiveCircle = document.getElementById('pv-mobile-slider-active');
 
-  if (mobileSlider && mobileDotsContainer && mobileActiveCircle) {
-    // Gather all interactable items in order
-    const scrollItems = Array.from(document.querySelectorAll('.pv-project-item, .pv-section-heading.pv-page-item'));
-    
-    // Create dots
-    scrollItems.forEach(() => {
-      const dot = document.createElement('div');
-      dot.className = 'pv-mobile-slider-dot';
-      mobileDotsContainer.appendChild(dot);
-    });
-
-    // Touch logic
-    const handleSliderTouch = (e) => {
-      e.preventDefault(); // Prevent page scrolling during interaction
-      
-      const touch = e.touches[0] || e.changedTouches[0];
-      const touchY = touch.clientY;
-
-      const rect = mobileDotsContainer.getBoundingClientRect();
-      
-      // Calculate active index based on Y position inside the dots container
-      let yOffset = touchY - rect.top;
-      let percent = yOffset / rect.height;
-      if (percent < 0) percent = 0;
-      if (percent > 1) percent = 1;
-      
-      let index = Math.floor(percent * scrollItems.length);
-      if (index >= scrollItems.length) index = scrollItems.length - 1;
-      
-      // Move active circle to follow finger (relative to the slider container)
-      const sliderRect = mobileSlider.getBoundingClientRect();
-      mobileActiveCircle.style.top = `${touchY - sliderRect.top - 10}px`; // -10px to center the 20px circle
-      
-      // Trigger enter logic for the corresponding item
-      const targetItem = scrollItems[index];
-      if (targetItem && !targetItem.classList.contains('is-active')) {
-        targetItem.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true }));
-      }
-    };
-
-    mobileSlider.addEventListener('touchstart', (e) => {
-      mobileSlider.classList.add('is-interacting');
-      handleSliderTouch(e);
-    }, { passive: false });
-
-    mobileSlider.addEventListener('touchmove', handleSliderTouch, { passive: false });
-
-    mobileSlider.addEventListener('touchend', () => {
-      mobileSlider.classList.remove('is-interacting');
-      // The CSS transition on transform scale handles the decay automatically
-    });
-    
-    mobileSlider.addEventListener('touchcancel', () => {
-      mobileSlider.classList.remove('is-interacting');
-    });
-  }
 
 })();
