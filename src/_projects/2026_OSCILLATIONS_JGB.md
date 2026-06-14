@@ -3,7 +3,7 @@ layout: project.njk
 title: "Oscillations~"
 year: 2026
 status: Finished
-description: "Visual identity and design system for the 2026 Digital Media Graduation Festival at HfK Bremen. The visual concept utilizes custom generative patterns based on water undulations for local Risograph printing. Official event info can be found on the [HfK Bremen Website](https://www.hfk-bremen.de/de/veranstaltungen/oscillations-digital-media-graduation-festival/17174)."
+description: "Visual identity and design system for the 2026 Digital Media Graduation Festival at HfK Bremen. The visual concept utilizes custom generative patterns based on water undulations for local Risograph printing. Official event info can be found on the [HfK Bremen Website](https://www.hfk-bremen.de/de/veranstaltungen/oscillations-digital-media-graduation-festival/17174). Check out the festival website at [oscillations.digitalmedia-bremen.de](https://oscillations.digitalmedia-bremen.de)."
 categories:
   - "Design"
   - "Freelance"
