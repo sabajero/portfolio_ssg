@@ -26,6 +26,13 @@
   const worksToggle = document.getElementById('pv-works-toggle');
   const worksList = document.getElementById('pv-works-list');
 
+  // Full Screen Gallery Overlay Refs
+  const overlay = document.getElementById('pv-gallery-overlay');
+  const overlayImg = document.getElementById('pv-gallery-overlay-img');
+  const overlayClose = document.getElementById('pv-gallery-overlay-close');
+  const overlayPrev = document.getElementById('pv-gallery-overlay-prev');
+  const overlayNext = document.getElementById('pv-gallery-overlay-next');
+
   document.addEventListener('DOMContentLoaded', () => {
     const galleryDataEl = document.getElementById('pv-gallery-data');
     window.pvGalleryImages = galleryDataEl ? galleryDataEl.innerHTML.split('|pv|').map(s => s.trim()).filter(Boolean) : [];
@@ -105,9 +112,19 @@
   // ── Middle panel helpers ─────────────────────────────────
   function showMiddle({ categoriesHtml = '', title = '', description = '', content = '', images = [], url = '', isPage = false }) {
     const catContainer = document.getElementById('pv-proj-categories');
-    if (catContainer) catContainer.innerHTML = categoriesHtml;
+    if (catContainer) {
+      catContainer.innerHTML = categoriesHtml;
+      catContainer.style.display = categoriesHtml ? '' : 'none';
+    }
 
-    document.getElementById('pv-proj-title').textContent = title;
+    const titleEl = document.getElementById('pv-proj-title');
+    if (title) {
+      titleEl.textContent = title;
+      titleEl.style.display = '';
+    } else {
+      titleEl.textContent = '';
+      titleEl.style.display = 'none';
+    }
 
     const descEl = document.getElementById('pv-proj-description');
     if (descEl) {
@@ -126,8 +143,10 @@
             return `<a href="${href}" target="_blank" rel="noopener noreferrer" style="color: var(--pv-accent); text-decoration: underline;">${text}</a>`;
           });
         descEl.innerHTML = safeDesc;
+        descEl.style.display = '';
       } else {
         descEl.innerHTML = '';
+        descEl.style.display = 'none';
       }
     }
     document.getElementById('pv-proj-body').innerHTML = content;
@@ -232,8 +251,100 @@
         isHovering = false;
         clearZoom();
       });
+
+      // Click event for Full Screen Gallery Overlay
+      img.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        openFullscreenGallery(img.src);
+      });
     });
   }
+
+  // ── Full Screen Gallery Overlay Slideshow Logic ───────────
+  let activeProjectImages = [];
+  let currentOverlayIndex = -1;
+
+  function openFullscreenGallery(clickedSrc) {
+    if (!overlay || !overlayImg) return;
+    
+    // Find all images within the active project display area
+    const pView = document.getElementById('pv-project-view');
+    if (!pView) return;
+
+    const visibleImages = Array.from(pView.querySelectorAll('.pv-proj-body img, .pv-proj-images img'));
+    activeProjectImages = visibleImages.map(img => img.src);
+    currentOverlayIndex = activeProjectImages.indexOf(clickedSrc);
+    
+    if (currentOverlayIndex === -1) {
+      activeProjectImages = [clickedSrc];
+      currentOverlayIndex = 0;
+    }
+
+    updateOverlayImage();
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Lock background scroll
+  }
+
+  function closeFullscreenGallery() {
+    if (!overlay) return;
+    overlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  function nextOverlayImage() {
+    if (activeProjectImages.length <= 1) return;
+    currentOverlayIndex = (currentOverlayIndex + 1) % activeProjectImages.length;
+    updateOverlayImage();
+  }
+
+  function prevOverlayImage() {
+    if (activeProjectImages.length <= 1) return;
+    currentOverlayIndex = (currentOverlayIndex - 1 + activeProjectImages.length) % activeProjectImages.length;
+    updateOverlayImage();
+  }
+
+  function updateOverlayImage() {
+    if (overlayImg && activeProjectImages[currentOverlayIndex]) {
+      overlayImg.src = activeProjectImages[currentOverlayIndex];
+    }
+  }
+
+  // Bind Overlay Events
+  if (overlayClose) {
+    overlayClose.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closeFullscreenGallery();
+    });
+  }
+  if (overlayPrev) {
+    overlayPrev.addEventListener('click', (e) => {
+      e.stopPropagation();
+      prevOverlayImage();
+    });
+  }
+  if (overlayNext) {
+    overlayNext.addEventListener('click', (e) => {
+      e.stopPropagation();
+      nextOverlayImage();
+    });
+  }
+  if (overlay) {
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay || e.target === document.querySelector('.pv-gallery-overlay-content')) {
+        closeFullscreenGallery();
+      }
+    });
+  }
+
+  // Keyboard navigation support
+  document.addEventListener('keydown', (e) => {
+    if (overlay && overlay.style.display === 'flex') {
+      if (e.key === 'Escape') closeFullscreenGallery();
+      if (e.key === 'ArrowRight') nextOverlayImage();
+      if (e.key === 'ArrowLeft') prevOverlayImage();
+    }
+  });
 
   // ── Inline Artbook Carousel Logic ─────────────────────────
   function initCarousels() {

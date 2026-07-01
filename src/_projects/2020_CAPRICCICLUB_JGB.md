@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 title: "Capricci Club Co."
-year: ""
+year: "2023"
 status: published
 description: "Brand design, illustration, packaging and visual identity for Capricci Club, a Colombian feminist hair care brand — product lines 'Candela y Quimera' and 'Fridha y Kahlo'."
 links:

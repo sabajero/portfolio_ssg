@@ -1,6 +1,6 @@
 ---
 layout: project.njk
-title: "Outsourcing research (Master Project)"
+title: "Alma Corp"
 year: 2025
 status: published
 description: "This exploration on outsourcing and post-capitalism imaginaries is composed of three parts: How to shit on your company -  Corp Bully (Video Game) and General Human Supervisor (Zine, audio)"

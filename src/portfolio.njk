@@ -100,16 +100,16 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 
       {# ── WORKS (collapsible dropdown) ── #}
       <section class="pv-section" id="pv-sec-works">
-        <h2 class="pv-section-heading pv-dropdown-toggle is-open" id="pv-works-toggle" role="button" tabindex="0"
-          aria-expanded="true" aria-controls="pv-works-list">
+        <h2 class="pv-section-heading pv-dropdown-toggle" id="pv-works-toggle" role="button" tabindex="0"
+          aria-expanded="false" aria-controls="pv-works-list">
           works <span class="pv-arrow">↓</span>
         </h2>
-        <ul class="pv-project-list" id="pv-works-list">
+        <ul class="pv-project-list is-collapsed" id="pv-works-list">
           {% for project in collections.projects | reverse %}
           <li class="pv-project-item" data-slug="{{ project.fileSlug }}" role="button" tabindex="0"
             aria-label="Preview {{ project.data.title }}">
-            <span class="pv-project-year">{{ project.data.year }}</span>
             <span class="pv-project-title">{{ project.data.title }}</span>
+            <span class="pv-project-year">{{ project.data.year }}</span>
           </li>
           {% endfor %}
         </ul>
@@ -145,7 +145,7 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
   </aside>
 
   {# ════════ MIDDLE PANEL ════════ #}
-  <main class="pv-middle" id="pv-middle">
+  <section class="pv-middle" id="pv-middle">
 
     {# Default state — portrait/idle #}
     <div class="pv-middle-default" id="pv-default">
@@ -171,14 +171,14 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
 
     {# Project / page preview state #}
     <div class="pv-middle-project" id="pv-project-view">
-      <h2 class="pv-proj-title" id="pv-proj-title"></h2>
-      <div class="pv-proj-categories" id="pv-proj-categories"></div>
-      <p class="pv-proj-description" id="pv-proj-description"></p>
+      <h2 class="pv-proj-title" id="pv-proj-title" style="display:none"></h2>
+      <div class="pv-proj-categories" id="pv-proj-categories" style="display:none"></div>
+      <p class="pv-proj-description" id="pv-proj-description" style="display:none"></p>
       <div class="pv-proj-body" id="pv-proj-body"></div>
       <div class="pv-proj-images" id="pv-proj-images"></div>
     </div>
 
-  </main>
+  </section>
 
   {# ════════ RIGHT PANEL ════════ #}
   <aside class="pv-right" id="pv-right" aria-label="Image zoom view">
@@ -196,6 +196,16 @@ description: "Jerónimo Gutiérrez Balanta — Artist, Researcher & Designer"
   </aside>
 
 
+
+  {# ── FULL SCREEN GALLERY OVERLAY ── #}
+  <div class="pv-gallery-overlay" id="pv-gallery-overlay" style="display: none;">
+    <button class="pv-gallery-overlay-close" id="pv-gallery-overlay-close" aria-label="Close gallery">X</button>
+    <button class="pv-gallery-overlay-btn prev" id="pv-gallery-overlay-prev" aria-label="Previous image">&lt;</button>
+    <div class="pv-gallery-overlay-content">
+      <img src="" alt="" id="pv-gallery-overlay-img" />
+    </div>
+    <button class="pv-gallery-overlay-btn next" id="pv-gallery-overlay-next" aria-label="Next image">&gt;</button>
+  </div>
 
 </div>
 

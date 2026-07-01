@@ -6,14 +6,15 @@
 /* ── Design tokens ───────────────────────────────────────── */
 :root {
   --pv-accent: #8153ff;
-  /* Same purple as main site */
   --pv-bg: #ffffff;
   --pv-text: #111111;
   --pv-muted: rgba(0, 0, 0, 0.38);
   --pv-dim: rgba(0, 0, 0, 0.6);
   --pv-border: rgba(0, 0, 0, 0.07);
-  --pv-font-sm: 0.85rem;
-  --pv-font-xs: 0.7rem;
+  --pv-font-sm: 1rem;
+  --pv-font-xs: 0.85rem;
+  --pv-top-inset: 1.5rem;
+  --pv-title-size: 2.1rem;
 }
 
 /* ── RESET & ROOT ────────────────────────────────────────── */
@@ -86,7 +87,7 @@ body.portfolio-view .site-nav {
   top: 0;
   z-index: 20;
   background: var(--pv-bg);
-  padding: 3.5rem 1.5rem 1rem;
+  padding: var(--pv-top-inset) 1.5rem 1rem;
 }
 
 /* VIEWFINDER LABEL */
@@ -113,18 +114,18 @@ body.portfolio-view .site-nav {
 /* NAME — big, thin Inter, matching original homepage display style */
 .pv-name {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 200;
-  letter-spacing: -0.02em;
+  font-size: var(--pv-title-size);
+  font-weight: 400;
+  letter-spacing: -0.05em;
   line-height: 1.1;
-  margin-bottom: 0.6rem;
+  margin: 0 0 0.6rem 0;
   color: var(--pv-text);
   transition: color 150ms ease;
   cursor: pointer;
 }
 
 .pv-name:hover {
-  color: #f9731fff;
+  color: var(--pv-accent);
 }
 
 /* BIO */
@@ -137,7 +138,7 @@ body.portfolio-view .site-nav {
   font-size: 1.5rem;
   font-weight: 200;
   color: var(--pv-muted);
-  letter-spacing: 0.01em;
+  letter-spacing: -0.05em;
   margin-bottom: 0;
 }
 
@@ -153,13 +154,13 @@ body.portfolio-view .site-nav {
 
 .pv-section-heading {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 200;
-  letter-spacing: -0.02em;
+  font-size: var(--pv-title-size);
+  font-weight: 400;
+  letter-spacing: -0.05em;
   line-height: 1.1;
   color: var(--pv-text);
-  padding: 0.85rem 0 0.4rem;
-  margin-bottom: 0.5rem;
+  padding: 0.35rem 0 0.15rem;
+  margin-bottom: 0.1rem;
 }
 
 /* When a section heading is also a clickable page item */
@@ -230,17 +231,18 @@ body.portfolio-view .site-nav {
 
 .pv-project-item {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 0.2rem 0;
   cursor: pointer;
 }
 
 .pv-project-year {
-  font-size: var(--pv-font-xs);
+  font-size: var(--pv-font-sm);
   color: var(--pv-muted);
   flex-shrink: 0;
-  min-width: 2.4rem;
+  text-align: right;
   font-variant-numeric: tabular-nums;
   transition: color 150ms ease;
 }
@@ -250,15 +252,13 @@ body.portfolio-view .site-nav {
   font-weight: 300;
   color: var(--pv-dim);
   line-height: 1.4;
-  border-bottom: 1px solid transparent;
-  transition: color 150ms ease, border-color 150ms ease;
+  transition: color 150ms ease;
 }
 
 /* Hover & active — purple accent */
 .pv-project-item:hover .pv-project-title,
 .pv-project-item.is-active .pv-project-title {
   color: var(--pv-accent);
-  border-bottom-color: var(--pv-accent);
 }
 
 .pv-project-item:hover .pv-project-year,
@@ -346,7 +346,7 @@ body.portfolio-view .site-nav {
 /* ── Project / Page preview state ────────────────────────── */
 .pv-middle-project {
   display: none;
-  padding: 0 2.5rem 4rem;
+  padding: var(--pv-top-inset) 2.5rem 4rem;
   animation: fadeUp 260ms ease both;
 }
 
@@ -357,12 +357,10 @@ body.portfolio-view .site-nav {
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(10px);
   }
 
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -430,48 +428,65 @@ body.portfolio-view .site-nav {
 
 .pv-proj-title {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 3.8rem;
-  font-weight: 230;
-  letter-spacing: -0.02em;
-  line-height: 1.0;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  font-size: var(--pv-title-size);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  margin: 0 0 1rem 0;
+  padding: 0;
   color: var(--pv-text);
 }
 
+.pv-proj-title:empty {
+  display: none;
+  margin: 0;
+}
+
 .pv-proj-description {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.75;
   color: #444;
   margin-bottom: 1.5rem;
 }
 
+.pv-proj-description:empty {
+  display: none;
+  margin: 0;
+}
+
 .pv-proj-body {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.8;
   color: #555;
 }
 
+.pv-proj-body > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 .pv-proj-body h1 {
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 3.8rem;
-  font-weight: 230;
-  letter-spacing: -0.02em;
-  line-height: 1.0;
+  font-size: var(--pv-title-size);
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
   color: var(--pv-text);
   margin: 2rem 0 1rem;
 }
 
+
 .pv-proj-body h2,
 .pv-proj-body h3 {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
   color: var(--pv-text);
   margin: 1.5rem 0 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: -0.05em;
+  line-height: 1.2;
 }
 
 .pv-proj-body p {
@@ -752,6 +767,88 @@ body.portfolio-view .site-nav {
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
 }
 
+/* ── FULL SCREEN GALLERY OVERLAY ──────────────────────────── */
+.pv-gallery-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.pv-gallery-overlay-content {
+  max-width: 80%;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pv-gallery-overlay-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.pv-gallery-overlay-btn {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--pv-text);
+  cursor: pointer;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 150ms ease, opacity 150ms ease;
+  opacity: 0.6;
+  z-index: 1010;
+}
+
+.pv-gallery-overlay-btn:hover {
+  color: var(--pv-accent);
+  opacity: 1;
+}
+
+.pv-gallery-overlay-btn.prev {
+  left: 2rem;
+}
+
+.pv-gallery-overlay-btn.next {
+  right: 2rem;
+}
+
+.pv-gallery-overlay-close {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--pv-text);
+  cursor: pointer;
+  padding: 1rem;
+  transition: color 150ms ease, opacity 150ms ease;
+  opacity: 0.6;
+  z-index: 1010;
+}
+
+.pv-gallery-overlay-close:hover {
+  color: var(--pv-accent);
+  opacity: 1;
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 900px) {
   body.portfolio-view {
@@ -836,7 +933,7 @@ body.portfolio-view .site-nav {
   /* Shrink Project Titles */
   .pv-proj-title,
   .pv-proj-body h1 {
-    font-size: 2.3rem; 
+    font-size: 1.8rem; 
     line-height: 1.1;
   }
 
