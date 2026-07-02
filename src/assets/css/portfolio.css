@@ -446,7 +446,7 @@ body.portfolio-view .site-nav {
   font-size: 1.05rem;
   font-weight: 300;
   line-height: 1.75;
-  color: #444;
+  color: #000;
   margin-bottom: 1.5rem;
 }
 
@@ -459,7 +459,7 @@ body.portfolio-view .site-nav {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.8;
-  color: #555;
+  color: #000;
 }
 
 .pv-proj-body > *:first-child {
@@ -870,7 +870,7 @@ body.portfolio-view .site-nav {
     position: static;
   }
 
-  /* Fixed Mobile Header */
+  /* Fixed Mobile Header with Hiding Transition */
   .pv-intro {
     position: fixed;
     top: 0;
@@ -879,7 +879,12 @@ body.portfolio-view .site-nav {
     z-index: 50;
     background: var(--pv-bg);
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--pv-border);
+    border-bottom: none;
+    transition: transform 0.3s ease;
+  }
+
+  .pv-intro.is-hidden {
+    transform: translateY(-100%);
   }
 
   .pv-intro-inner {
@@ -887,39 +892,41 @@ body.portfolio-view .site-nav {
   }
 
   .pv-name {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 0.1rem;
   }
 
   .pv-location {
-    font-size: 0.95rem;
+    display: none;
   }
 
-  /* Show Burger */
-  .pv-burger {
-    display: block;
-  }
-
-  /* Off-canvas Sidebar */
+  /* Off-canvas Sidebar on the Right */
   .pv-sections {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
+    left: auto;
     width: 80%;
     max-width: 320px;
     height: 100dvh;
     padding: 6rem 1.5rem 2rem; /* Give space for header */
     background: var(--pv-bg);
     z-index: 45; /* Sits below the fixed header so burger is always clickable */
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: transform 0.3s ease;
     overflow-y: auto;
-    border-right: 1px solid var(--pv-border);
-    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.05); /* subtle shadow */
+    border-left: 1px solid var(--pv-border);
+    border-right: none;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.05); /* subtle shadow on the left */
   }
 
   .pv-sections.is-open {
     transform: translateX(0);
+  }
+
+  .pv-section-heading {
+    font-size: 1.6rem;
+    font-weight: 400;
   }
 
   /* Main View Area */
@@ -930,10 +937,16 @@ body.portfolio-view .site-nav {
     border-right: none;
   }
 
-  /* Shrink Project Titles */
+  .pv-middle-project {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 6rem; /* Ensure space above bottom bar */
+  }
+
+  /* Shrink Project Titles to match pv-name */
   .pv-proj-title,
   .pv-proj-body h1 {
-    font-size: 1.8rem; 
+    font-size: 1.6rem; 
     line-height: 1.1;
   }
 
@@ -945,6 +958,89 @@ body.portfolio-view .site-nav {
   /* Hide zoom panel entirely */
   .pv-right {
     display: none;
+  }
+
+  /* Mobile Bottom Navigation Bar & Square Burger */
+  .pv-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: var(--pv-bg);
+    border-top: 1px solid var(--pv-border);
+    z-index: 100;
+    justify-content: flex-end;
+    transition: opacity 0.4s ease;
+  }
+
+  .pv-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--pv-border);
+    border-radius: 0;
+    box-shadow: none;
+    z-index: 101;
+  }
+
+  .pv-burger span {
+    width: 24px;
+    left: 13px;
+  }
+
+  .pv-burger span:nth-child(1) { top: 17px; }
+  .pv-burger span:nth-child(2) { top: 24px; }
+  .pv-burger span:nth-child(3) { top: 31px; }
+
+  .pv-burger.is-active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .pv-burger.is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  .pv-burger.is-active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .pv-mobile-nav {
+    display: none;
+    height: 50px;
+  }
+
+  .pv-mobile-nav.is-visible {
+    display: flex;
+  }
+
+  .pv-mobile-nav-btn {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid var(--pv-border);
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--pv-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 150ms;
+  }
+
+  .pv-mobile-nav-btn:disabled {
+    color: var(--pv-muted);
+    cursor: not-allowed;
+    opacity: 0.3;
   }
 
 

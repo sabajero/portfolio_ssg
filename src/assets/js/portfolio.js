@@ -181,6 +181,17 @@
     projectView.style.animation = '';
 
     panelMiddle.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Show/hide mobile navigation controls
+    const mobileNav = document.getElementById('pv-mobile-nav');
+    if (mobileNav) {
+      if (!isPage && activeSlug) {
+        mobileNav.classList.add('is-visible');
+        updateMobileNavButtons();
+      } else {
+        mobileNav.classList.remove('is-visible');
+      }
+    }
   }
 
   function showDefault() {
@@ -191,6 +202,12 @@
     defaultView.style.display = 'flex';
     clearActive();
     clearZoom();
+
+    // Hide mobile nav
+    const mobileNav = document.getElementById('pv-mobile-nav');
+    if (mobileNav) {
+      mobileNav.classList.remove('is-visible');
+    }
   }
 
   // ── Zoom helpers ─────────────────────────────────────────
@@ -614,6 +631,110 @@
     });
   }
 
+  // ── Mobile Project Navigation Buttons ─────────────────────
+  function updateMobileNavButtons() {
+    const prevBtn = document.getElementById('pv-mobile-prev');
+    const nextBtn = document.getElementById('pv-mobile-next');
+    if (!prevBtn || !nextBtn || !activeSlug) {
+        if(prevBtn && nextBtn) {
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+        }
+        return;
+    }
 
+    const idx = projects.findIndex(p => p.slug === activeSlug);
+    if (idx === -1) {
+      prevBtn.disabled = true;
+      nextBtn.disabled = true;
+      return;
+    }
+
+    // Prev goes to newer project (idx - 1)
+    prevBtn.disabled = (idx - 1 < 0);
+    // Next goes to older project (idx + 1)
+    nextBtn.disabled = (idx + 1 >= projects.length);
+  }
+
+  const prevBtn = document.getElementById('pv-mobile-prev');
+  const nextBtn = document.getElementById('pv-mobile-next');
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!activeSlug) return;
+      const idx = projects.findIndex(p => p.slug === activeSlug);
+      if (idx - 1 >= 0) {
+        const nextProject = projects[idx - 1];
+        const targetItem = document.querySelector(`.pv-project-item[data-slug="${nextProject.slug}"]`);
+        if (targetItem) {
+          targetItem.dispatchEvent(new MouseEvent('mouseenter'));
+        }
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (!activeSlug) return;
+      const idx = projects.findIndex(p => p.slug === activeSlug);
+      if (idx + 1 < projects.length) {
+        const nextProject = projects[idx + 1];
+        const targetItem = document.querySelector(`.pv-project-item[data-slug="${nextProject.slug}"]`);
+        if (targetItem) {
+          targetItem.dispatchEvent(new MouseEvent('mouseenter'));
+        }
+      }
+    });
+  }
+
+  // ── Mobile Header Scroll Hide & Bottom Bar Auto-Fade ──────
+  let lastScrollTop = 0;
+  let fadeTimeout = null;
+
+  if (panelMiddle) {
+    panelMiddle.addEventListener('scroll', () => {
+      if (window.innerWidth > 900) return; // Mobile only
+      
+      const st = panelMiddle.scrollTop;
+      const intro = document.getElementById('pv-intro');
+      
+      // 1. Hide/Show Header
+      if (intro) {
+        if (st > lastScrollTop && st > 50) {
+          // Scroll down - hide
+          intro.classList.add('is-hidden');
+        } else {
+          // Scroll up - show
+          intro.classList.remove('is-hidden');
+        }
+      }
+      lastScrollTop = st <= 0 ? 0 : st;
+
+      // 2. Wake up bottom bar opacity on scroll
+      resetBottomBarFade();
+    }, { passive: true });
+  }
+
+  // Wake up bottom bar on click/touch
+  document.addEventListener('touchstart', resetBottomBarFade, { passive: true });
+  document.addEventListener('click', resetBottomBarFade, { passive: true });
+
+  function resetBottomBarFade() {
+    const bar = document.getElementById('pv-bottom-bar');
+    if (!bar) return;
+    
+    bar.style.opacity = '1';
+    
+    clearTimeout(fadeTimeout);
+    fadeTimeout = setTimeout(() => {
+      // Only fade if the menu is not currently open
+      const burger = document.getElementById('pv-burger');
+      if (burger && !burger.classList.contains('is-active')) {
+        bar.style.opacity = '0.2';
+      }
+    }, 4000); // 4 seconds of stillness
+  }
 
 })();
