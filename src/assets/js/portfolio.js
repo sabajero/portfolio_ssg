@@ -728,6 +728,11 @@
     bar.style.opacity = '1';
     
     clearTimeout(fadeTimeout);
+    
+    // Only auto-fade if the user has scrolled down the content body
+    const st = panelMiddle ? panelMiddle.scrollTop : 0;
+    if (st <= 50) return;
+
     fadeTimeout = setTimeout(() => {
       // Only fade if the menu is not currently open
       const burger = document.getElementById('pv-burger');
